@@ -1,0 +1,248 @@
+.bgPic{
+    position: relative;
+    width: 80%;
+    /*position: absolute;*/
+    /*top: 3%;*/
+    /*left: 0;*/
+    /*width: 100%;*/
+}
+.bgPic_img{
+    width: 100%;
+}
+
+.clusterListBox {
+    width: 20%;
+    height: 100%;
+    background-color: rgba(59,98,132,1);
+    overflow: hidden;
+}
+.clusterListBox h3 {
+    color: #ffffff;
+}
+.clusterListBox ul {
+    border-top: 1px solid rgb(53,64,83);
+}
+.clusterListBox li {
+    position: relative;
+    display: block;
+    padding: 15px 15px;
+    margin-bottom: -1px;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.clusterListBox li:hover {
+    background-color: rgb(53,64,83);
+}
+.clusterListBox li.action {
+    background-color: rgb(53,64,83);
+}
+
+.buttons_addSubsystem{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+.btn_signal,.light{
+    position: absolute;
+    top: 15%;
+    width:13%;
+    height: 73%;
+}
+.light{
+    left: 11%;
+}
+.control_machineRoom{
+    position: absolute;
+    left: 81%;
+    top: 40%;
+    width: 9%;
+    height: 16%;
+    background-color: #1b6d85;
+
+}
+.btn_signal{
+    left: 63%;
+}
+.switch_inner{
+    position: absolute;
+    height: 100%;
+    width: 3%;
+    left: 33%;
+}
+.switch1,.switch2,.switch3,.switch4,.switch5{
+    position: absolute;
+    height: 11.5%;
+    width: 100%;
+    font-size: 3px;
+}
+.switch1{
+    top: 14%;
+}
+.switch2{
+    top: 28%;
+}
+.switch3{
+    top: 41.8%;
+}
+.switch4{
+    top: 55.5%;
+}
+.switch5{
+    top: 69%;
+}
+.btn1200_B,.btn1200_A,.btn2500_B,.btn2500_A{
+    position: absolute;
+    top: 72%;
+    width: 26%;
+    height: 15%;
+}
+.btn1200_big{
+    position: absolute;
+    left: 22%;
+    top: 12%;
+    width: 65%;
+    height: 20%;
+}
+.btn2500_big{
+    position: absolute;
+    left: 20%;
+    top: 15%;
+    width: 67%;
+    height: 20%;
+}
+.btn1200_B{
+    left: 27%;
+}
+.btn1200_A{
+    left: 61%;
+}
+.btn2500_B{
+    left: 26%;
+}
+.btn2500_A{
+    left: 58.5%;
+}
+.btn1200_division{
+    position: absolute;
+    width: 17%;
+    height: 10%;
+    top: 48%;
+    left: 32%;
+}
+.btn2500_division{
+    position: absolute;
+    width: 17%;
+    height: 10%;
+    top: 48.5%;
+    left: 30.5%;
+}
+.variousMonitor_btnM{
+    position: absolute;
+    left: 41%;
+    top: 73%;
+    width: 26%;
+    height: 14%;
+}
+.variousMonitor_division{
+    position: absolute;
+    left: 46%;
+    top: 51%;
+    width: 17%;
+    height: 10%;
+}
+.variousMonitor_big{
+    position: absolute;
+    left: 20%;
+    top: 18%;
+    width: 67%;
+    height: 20%;
+}
+.conversation_btnA,.conversation_btnB{
+    position: absolute;
+    top:20%;
+    width: 16%;
+    height: 10%;
+}
+.conversation_btnA{
+    left: 19%;
+}
+.conversation_btnB{
+    left: 52%;
+}
+.conversation_btnWireless{
+    position: absolute;
+    top:20%;
+    left: 79%;
+    width: 15%;
+    height: 21%;
+}
+.conversation_sub{
+    position: absolute;
+    left: 8%;
+    top: 52%;
+    width: 80%;
+    height: 31%;
+    background-color: #1b6d85;
+}
+.conversation_subInner1,.conversation_subInner2,.conversation_subInner3,.conversation_subInner4,.conversation_subInner5{
+    position: absolute;
+    top: 5%;
+    width: 17%;
+    height: 80%;
+}
+.conversation_subInner1{
+    left: 2%;
+}
+.conversation_subInner2{
+    left: 22%;
+}
+.conversation_subInner3{
+    left: 42%;
+}
+.conversation_subInner4{
+    left: 62%;
+}
+.conversation_subInner5{
+    left: 82%;
+}
+.btn_select_top,.btn_select_bottom{
+    position: absolute;
+
+    background-color: #1b6d85;
+    width: 20%;
+    height: 27%;
+    left: 42%;
+}
+.btn_select_top{
+    top: 17%;
+}
+.btn_select_bottom{
+    top: 46%;
+}
+.innerTop1,.innerTop2,.innerTop3,.innerTop4,.innerTop5,.innerTop6{
+    position: absolute;
+    width: 15%;
+    height: 33%;
+    background-color: black;
+    font-size: 0.1rem;
+}
+.innerTop1,.innerTop2,.innerTop3{
+    top: 7%;
+}
+.innerTop4,.innerTop5,.innerTop6{
+    top: 60%;
+}
+.innerTop1,.innerTop4{
+    left: 10%;
+}
+.innerTop2,.innerTop5{
+    left: 40%;
+}
+.innerTop3,.innerTop6{
+    left: 70%;
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>分控监看结构图</title>
+</head>
+<style>
+	*{
+		margin: 0 0 0 0;
+		padding: 0 0 0 0;
+	}
+	.pic_box img{
+		position: relative;
+		width: 73%;
+
+	}
+	.modifyLeft{
+		left:16%;
+		top: 72%;
+		width: 51%;
+	}
+
+	.modifyWidth{
+		width:40%;
+	}
+	.modifyTop{
+		width:32%;
+		height:33%;
+	}
+	.noLineTell{
+		width:15%;
+		height:32%;
+		position:absolute;
+		top:10%;
+		right:2%;
+		background:#37a8fd;
+	}
+	.noLineTell ul{
+		list-style: none;
+		padding:0;
+	}
+	.noLineTell ul li{
+		width:100%;
+		height:30px;
+		padding-top:5px;
+		margin-top:5px;
+	}
+	.noLineTell_text,.normalButton{
+		text-align:center;
+	}
+	.normalButton button{
+		width:60%;
+		text-align: center;
+		border:1px solid #c0c0c0;
+		font-size: 0.3rem;
+		font-weight: 600;
+		height:100%;
+		background:white;
+	}
+	.noLineTell_text{
+		font-size:24px;
+	}
+	.buttons{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+
+	}
+	.signal,.light,.switch1,.switch2,.switch3,.switch4,.switch5{
+		position: absolute;
+		background-color: #1b6d85;
+		border-radius: 10px;
+	}
+	.container_box{
+		width: 100%;
+		height: 100%;
+	}
+	button:hover{
+		cursor: pointer;
+	}
+	.bgPic{
+		background-color: #ffffff;
+	}
+	.matrixA,.matrixB,.matrixBig,.matrixM{
+		position: absolute;
+	}
+	.division{
+		position: absolute;
+	}
+	@media screen and (max-width: 1024px) {
+		.pic_box img {
+			position: relative;
+			width: 95%;
+		}
+	}
+
+</style>
+<link rel="stylesheet" href="css/systemIframes.css"/>
+<body>
+<div class="pic_box">
+	<div class="bgPic">
+		<img src="../images/分控监看结构图.svg">
+	</div>
+</div>
+<div class="buttons">
+	<div class="container_box">
+		<div class="make_container" id="A">
+			<button id="2" class="make turnTo_pdf matrixM" value="">矩阵M</button>
+		</div>
+		<div class="make_container" id="C">
+			<button id="15" class="make turnTo_pdf matrixBig" value="">导播</button>
+		</div>
+
+		<div class="make_container">
+			<button id="33" class="make turnTo_pdf division" value="">多画面分割</button>
+		</div>
+	</div>
+</div>
+<div class="system_subList">
+	<p class="subsystemTitle">分控监看结构图</p>
+	<ul id="subsystemList">
+
+	</ul>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script src="js/systemIframes.js"></script>
+<script>
+    window.onload=function () {
+
+        var width=$(".bgPic img").width();
+        var height=$(".bgPic").height();
+        $(".matrixM").css("width",width*0.27+"px");
+        $(".matrixM").css("height",height*0.17+"px");
+        $(".matrixM").css("top",height*0.7+"px");
+        $(".matrixM").css("left",width*0.40+"px");
+
+
+        $(".matrixBig").css("width",width*0.68+"px");
+        $(".matrixBig").css("height",height*0.3+"px");
+        $(".matrixBig").css("top",height*0.10+"px");
+        $(".matrixBig").css("left",width*0.20+"px");
+
+        $(".division").css("width",width*0.18+"px");
+        $(".division").css("height",height*0.1+"px");
+        $(".division").css("top",height*0.50+"px");
+        $(".division").css("left",width*0.46+"px");
+
+		getBySystem(190);
+    };
+</script>
+
+</html>

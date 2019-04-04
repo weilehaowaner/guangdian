@@ -1,0 +1,280 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <style>
+      .cls-1, .cls-14, .cls-2 {
+        font-size: 33.333px;
+      }
+
+      .cls-2 {
+        fill: #433f3c;
+      }
+
+      .cls-12, .cls-14, .cls-17, .cls-2 {
+        text-anchor: middle;
+      }
+
+      .cls-12, .cls-14, .cls-2 {
+        font-family: "PingFangSC-Semibold";
+      }
+
+      .cls-15, .cls-3 {
+        fill: #f55;
+      }
+
+      .cls-3 {
+        opacity: 0.3;
+      }
+
+      .cls-18, .cls-4 {
+        fill: #0ab644;
+      }
+
+      .cls-4, .cls-5 {
+        opacity: 0.2;
+      }
+
+      .cls-19, .cls-5 {
+        fill: #eda32e;
+      }
+
+      .cls-6, .cls-7 {
+        fill: #59493f;
+      }
+
+      .cls-13, .cls-7, .cls-9 {
+        fill-rule: evenodd;
+      }
+
+      .cls-8, .cls-9 {
+        fill: #b5b5b5;
+      }
+
+      .cls-10 {
+        fill: #37a8fd;
+      }
+
+      .cls-11, .cls-12 {
+        font-size: 47.222px;
+      }
+
+      .cls-12, .cls-14, .cls-17 {
+        fill: #fff;
+      }
+
+      .cls-13 {
+        fill: #f5a931;
+      }
+
+      .cls-16, .cls-17 {
+        font-size: 22.222px;
+      }
+
+      .cls-17 {
+        font-family: "PingFangSC-Medium";
+      }
+    </style>
+  </defs>
+  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAB5EAAARBAQMAAAA2XOXfAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEX///8AAABVwtN+AAAAAWJLR0QB/wIt3gAAAAlwSFlzAAAewgAAHsIBbtB1PgAAARdJREFUeNrtwQEBAAAAgiD/r25IQAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8GIOMAABWN303wAAAABJRU5ErkJggg==" x="-12" width="1937" height="1089"/>
+  <text x="943" y="101" class="cls-1"><tspan x="943" class="cls-2">导播</tspan></text>
+  <text x="1442" y="155" class="cls-1"><tspan x="1442" class="cls-2">灯光</tspan></text>
+  <text x="1607" y="156" class="cls-1"><tspan x="1607" class="cls-2">音频</tspan></text>
+  <rect x="783" y="176" width="331" height="150" class="cls-3"/>
+  <rect x="1387" y="176" width="114" height="150" class="cls-4"/>
+  <rect x="1554" y="173" width="114" height="150" class="cls-5"/>
+  <g>
+    <g>
+      <rect x="507" y="327" width="5" height="39" class="cls-6"/>
+      <path d="M522.987,337.985 L510.000,333.870 L497.013,337.985 L510.000,315.015 L522.987,337.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="617" y="327" width="5" height="39" class="cls-6"/>
+      <path d="M632.987,337.985 L620.000,333.870 L607.013,337.985 L620.000,315.015 L632.987,337.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="717" y="327" width="5" height="39" class="cls-6"/>
+      <path d="M732.987,337.985 L720.000,333.870 L707.013,337.985 L720.000,315.015 L732.987,337.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="717" y="137" width="5" height="39" class="cls-6"/>
+      <path d="M732.987,165.015 L720.000,169.130 L707.013,165.015 L720.000,187.985 L732.987,165.015 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="617" y="137" width="5" height="39" class="cls-6"/>
+      <path d="M632.987,165.015 L620.000,169.130 L607.013,165.015 L620.000,187.985 L632.987,165.015 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="507" y="137" width="5" height="39" class="cls-6"/>
+      <path d="M522.987,165.015 L510.000,169.130 L497.013,165.015 L510.000,187.985 L522.987,165.015 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1177" y="137" width="5" height="39" class="cls-6"/>
+      <path d="M1192.987,165.015 L1180.000,169.130 L1167.013,165.015 L1180.000,187.985 L1192.987,165.015 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1281" y="137" width="5" height="39" class="cls-6"/>
+      <rect x="1281" y="163" width="5" height="39" class="cls-6"/>
+      <path d="M1296.987,165.015 L1284.000,169.130 L1271.013,165.015 L1284.000,187.985 L1296.987,165.015 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1281" y="326" width="5" height="39" class="cls-6"/>
+      <path d="M1296.987,336.985 L1284.000,332.870 L1271.013,336.985 L1284.000,314.015 L1296.987,336.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1179" y="326" width="5" height="39" class="cls-6"/>
+      <path d="M1194.987,336.985 L1182.000,332.870 L1169.013,336.985 L1182.000,314.015 L1194.987,336.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1419" y="326" width="5" height="39" class="cls-6"/>
+      <path d="M1434.987,336.985 L1422.000,332.870 L1409.013,336.985 L1422.000,314.015 L1434.987,336.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1579" y="326" width="5" height="39" class="cls-6"/>
+      <path d="M1594.987,336.985 L1582.000,332.870 L1569.013,336.985 L1582.000,314.015 L1594.987,336.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="947" y="326" width="5" height="39" class="cls-6"/>
+      <path d="M962.987,336.985 L950.000,332.870 L937.013,336.985 L950.000,314.015 L962.987,336.985 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="772" y="639" width="12" height="153" class="cls-6"/>
+      <path d="M811.000,665.867 L779.500,655.860 L748.000,665.867 L779.500,610.006 L811.000,665.867 Z" class="cls-7"/>
+    </g>
+    <g>
+      <rect x="1006" y="326" width="5" height="122" class="cls-8"/>
+      <path d="M1021.987,336.985 L1009.000,332.870 L996.013,336.985 L1009.000,314.015 L1021.987,336.985 Z" class="cls-9"/>
+    </g>
+    <g>
+      <rect x="1466" y="326" width="5" height="122" class="cls-8"/>
+      <path d="M1481.987,336.985 L1469.000,332.870 L1456.013,336.985 L1469.000,314.015 L1481.987,336.985 Z" class="cls-9"/>
+    </g>
+    <g>
+      <rect x="1632" y="336" width="5" height="109" class="cls-8"/>
+      <path d="M1647.987,336.985 L1635.000,332.870 L1622.013,336.985 L1635.000,314.015 L1647.987,336.985 Z" class="cls-9"/>
+    </g>
+  </g>
+  <g>
+    <rect x="264" y="857" width="274" height="7" class="cls-6"/>
+    <rect x="1415" y="445" width="7" height="347" class="cls-8"/>
+    <rect x="1006" y="441" width="631" height="7" class="cls-8"/>
+    <rect x="264" y="248" width="147" height="7" class="cls-6"/>
+    <rect x="409" y="140" width="4" height="223" class="cls-6"/>
+    <rect x="409" y="362" width="1175" height="4" class="cls-6"/>
+    <rect x="409" y="136" width="878" height="4" class="cls-6"/>
+    <rect x="264" y="252" width="7" height="606" class="cls-6"/>
+  </g>
+  <g>
+    <rect x="1186" y="784" width="481" height="145" rx="69" ry="69" class="cls-10"/>
+    <text x="1426" y="874" class="cls-11"><tspan x="1426" class="cls-12">制作矩阵A</tspan></text>
+  </g>
+  <g>
+    <rect x="528" y="784" width="481" height="145" rx="69" ry="69" class="cls-10"/>
+    <text x="768" y="874" class="cls-11"><tspan x="768" class="cls-12">制作矩阵B</tspan></text>
+  </g>
+  <g>
+    <path d="M656.500,525.000 L891.500,525.000 C914.972,525.000 934.000,544.028 934.000,567.500 C934.000,590.972 914.972,610.000 891.500,610.000 L656.500,610.000 C633.028,610.000 614.000,590.972 614.000,567.500 C614.000,544.028 633.028,525.000 656.500,525.000 Z" class="cls-13"/>
+    <text x="774" y="580" class="cls-1"><tspan x="774" class="cls-14">多画面分割</tspan></text>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect x="458" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="511" y="223" class="cls-16"><tspan x="511" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="563" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="616" y="223" class="cls-16"><tspan x="616" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="668" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="721" y="223" class="cls-16"><tspan x="721" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="458" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="511" y="293" class="cls-16"><tspan x="511" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="563" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="616" y="293" class="cls-16"><tspan x="616" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="668" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="721" y="293" class="cls-16"><tspan x="721" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect x="793" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="846" y="223" class="cls-16"><tspan x="846" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="898" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="951" y="223" class="cls-16"><tspan x="951" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="1004" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1057" y="223" class="cls-16"><tspan x="1057" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="793" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="846" y="293" class="cls-16"><tspan x="846" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="901" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="954" y="293" class="cls-16"><tspan x="954" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="1007" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1060" y="293" class="cls-16"><tspan x="1060" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <g>
+        <rect x="1128" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1181" y="223" class="cls-16"><tspan x="1181" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="1234" y="186" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1287" y="223" class="cls-16"><tspan x="1287" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+    <g>
+      <g>
+        <rect x="1128" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1181" y="293" class="cls-16"><tspan x="1181" class="cls-17">55寸</tspan></text>
+      </g>
+      <g>
+        <rect x="1234" y="256" width="106" height="60" rx="27" ry="27" class="cls-15"/>
+        <text x="1287" y="293" class="cls-16"><tspan x="1287" class="cls-17">55寸</tspan></text>
+      </g>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect x="1391" y="186" width="106" height="60" rx="27" ry="27" class="cls-18"/>
+      <text x="1444" y="223" class="cls-16"><tspan x="1444" class="cls-17">55寸</tspan></text>
+    </g>
+    <g>
+      <rect x="1558" y="186" width="106" height="60" rx="27" ry="27" class="cls-19"/>
+      <text x="1611" y="223" class="cls-16"><tspan x="1611" class="cls-17">55寸</tspan></text>
+    </g>
+  </g>
+  <g>
+    <g>
+      <rect x="1391" y="256" width="106" height="60" rx="27" ry="27" class="cls-18"/>
+      <text x="1444" y="293" class="cls-16"><tspan x="1444" class="cls-17">55寸</tspan></text>
+    </g>
+    <g>
+      <rect x="1558" y="256" width="106" height="60" rx="27" ry="27" class="cls-19"/>
+      <text x="1611" y="293" class="cls-16"><tspan x="1611" class="cls-17">55寸</tspan></text>
+      <path d="M1005.146,712.290 C1000.413,702.405 1004.970,743.216 990.877,774.673 C1017.740,778.044 1052.929,786.000 1052.929,786.000 L1036.666,760.356 C1099.645,652.634 979.584,579.241 954.992,587.935 C979.325,590.431 1056.239,646.766 1021.260,732.227 C1021.805,733.365 1008.025,718.305 1005.146,712.290 Z" class="cls-7"/>
+    </g>
+  </g>
+</svg>

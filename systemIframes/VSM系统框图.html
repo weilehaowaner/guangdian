@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>VSM系统框图</title>
+</head>
+<link rel="stylesheet" href="css/systemIframes.css"/>
+<body>
+<div class="pic_box">
+    <div class="bgPic">
+        <img src="../images/VSM系统框图.svg">
+    </div>
+</div>
+<div class="buttons">
+    <div class="container_box">
+        <button id="42" class="turnTo_pdf" value="" style="position: absolute;left: 10%;top:5%;width: 53%;height: 52%;">同步系统框图</button>
+    </div>
+</div>
+<div class="system_subList">
+    <p class="subsystemTitle">VSM系统框图</p>
+    <ul id="subsystemList">
+
+    </ul>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+<script src="js/systemIframes.js"></script>
+<script>
+    window.onload=function () {
+
+        getBySystem(194);
+    };
+
+</script>
+
+</html>

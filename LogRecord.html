@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>日志记录</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!--分隔日志头部-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/cutOff_top.css">
+    <!--详细列表-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/informationList.css">
+    <!--翻页和按钮-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/pageingAndButton.css">
+    <link rel="stylesheet" type="text/css" href="css/LogRecord.css">
+</head>
+<body>
+<nav class="navbar nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Homepage.html">
+                <div class="logo_image">
+                    <img class="logo_one" src="images/logo.png"/>
+                    <img class="logo_two" src="images/logo_title.png"/>
+                </div>
+            </a>
+        </div>
+        <div class="container_list">
+            <ul id="top-nav" class="nav navbar-nav sections">
+                <li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+                <li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+                <li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+                <li class="content"><a class="current" href="LogRecord.html"><p>日志记录</p></a></li>
+                <li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+                <!--<li class="content"><a href="ManagePicture.html"><p>后台管理</p></a></li>-->
+            </ul>
+            <ul class="nav navbar-nav unload">
+                <li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main_content">
+    <div class="set_fontSize">
+        <div class="workLog cutOffContainer_toChange">
+            <!--日志头-->
+            <div class="logs">
+                <div class="logsCenter"><!--包裹日志居中-->
+                    <p class="logTitle logTitle_left selectLog">工作日志</p>
+                    <p class="PartingLine"></p>
+                    <p class="logTitle logTitle_right">维护日志</p>
+                </div>
+            </div>
+            <div class="searchBox">
+                <div class="row">
+                    <form class="form-horizontal" role="form" onsubmit="return false;">
+                        <div class="form-group  col-xs-6 col-sm-8 col-md-8 col-lg-7">
+                            <label class="col-sm-3 col-lg-2 control-label">时间区间</label>
+                            <div class="col-sm-3">
+                                <input id="searchWorkStarttime" class="form-control" type="text" value="">
+                            </div>
+                            <label class="col-sm-1 control-label" style="text-align: center;">&mdash;</label>
+                            <div class="col-sm-3">
+                                <input id="searchWorkEndtime" class="form-control" type="text" value="">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-xs form-control" type="button" onclick="worklogShow.screenByTime();">筛选</button>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-1">
+                            <div class="input-group ">
+                                <button id="refreshBtn" class="btn btn-primary" type="button" onclick=""><span class="glyphicon glyphicon-repeat"></span></button>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <div class="form-group col-xs-4 col-sm-4 col-md-3 col-lg-2 pull-right" style="padding-right: 30px;">
+                            <div class="input-group ">
+                                <input id="searchWorklogCon" type="text" class="form-control" placeholder="搜索">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button" onclick="worklogShow.search();"><img src="images/sousuo.png"></button>
+								</span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--信息列表-->
+            <div class="informationList">
+                <!--列表目录-->
+                <div class="informationList_line informationList_lineTitle">
+                    <div class="informationList_inline">
+                        <!-- <div class="studioWithCheck"><div class="checkBox"><img src=""></div><p class="studio">演播厅</p></div>-->
+                        <p class="studio">演播厅</p>
+                        <div class="program">节目名称</div>
+                        <div class="channel">频道</div>
+                        <div class="ContactPerson">联系人</div>
+                        <div class="ContactPerson">开始时间</div>
+                        <div class="informationManage">
+                        </div>
+                    </div>
+                </div>
+                <!--列表项-->
+                <div id="worklogList">
+                    <!--<div class="informationList_line">-->
+                        <!--<div  class="informationList_inline">-->
+                            <!--<p class="studio">演播厅</p>-->
+                            <!--<div class="program">节目名称</div>-->
+                            <!--<div class="channel">频道</div>-->
+                            <!--<div class="ContactPerson">联系人</div>-->
+                            <!--<div class="informationManage">-->
+                                <!--<p class="showInformation">查看</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--翻页-->
+            <div class="page_lineContainer">
+                <div class="pageContainer">
+                    <div class="pageNumber">
+                        <span id="worklogPageNow">1页</span>
+                        <span>/</span>
+                        <span id="worklogPageCount">1页</span>
+                    </div>
+                    <div class="paging">
+                        <span id="preWorklogPage">上一页</span>
+                        <span id="nextWorklogPage">下一页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="maintainLog cutOffContainer_toChange" style="display: none">
+            <!--日志头-->
+            <div class="logs">
+                <div class="logsCenter"><!--包裹日志居中-->
+                    <p class="logTitle logTitle_left">工作日志</p>
+                    <p class="PartingLine"></p>
+                    <p class="logTitle logTitle_right selectLog">维护日志</p>
+                </div>
+            </div>
+            <div class="searchBox">
+                <div class="row">
+                    <form class="form-horizontal" role="form" onsubmit="return false;">
+                        <div class="form-group  col-xs-6 col-sm-8 col-md-8 col-lg-7">
+                            <label class="col-sm-3 col-lg-2 control-label">时间区间</label>
+                            <div class="col-sm-3">
+                                <input id="searchMainStarttime" class="form-control" type="text" value="">
+                            </div>
+                            <label class="col-sm-1 control-label" style="text-align: center;">&mdash;</label>
+                            <div class="col-sm-3">
+                                <input id="searchMainEndtime" class="form-control" type="text" value="">
+                            </div>
+                            <div class="col-sm-2">
+                                <button class="btn btn-primary btn-xs form-control" type="button" onclick="mainlogShow.screenByTime();">筛选</button>
+                            </div>
+                        </div>
+                        <div class="form-group col-sm-1">
+                            <div class="input-group ">
+                                <button id="refreshBtn_1" class="btn btn-primary" type="button" onclick=""><span class="glyphicon glyphicon-repeat"></span></button>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                        <div class="form-group col-xs-4 col-sm-4 col-md-3 col-lg-2 pull-right" style="padding-right: 30px;">
+                            <div class="input-group ">
+                                <input id="searchMainlogCon" type="text" class="form-control" placeholder="搜索">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button" onclick="mainlogShow.search();"><img src="images/sousuo.png"></button>
+								</span>
+                            </div>
+                            <!-- /input-group -->
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!--信息列表-->
+            <div class="informationList">
+                <!--列表目录-->
+                <div class="informationList_line informationList_lineTitle">
+                    <div class="informationList_inline">
+                        <!-- <div class="studioWithCheck"><div class="checkBox"><img src=""></div><p class="studio">演播厅</p></div>-->
+                        <p class="maintainLog_equipName">设备名称</p>
+                        <div class="maintainLog_title">标题</div>
+                        <div class="maintainLog_person">维护人员</div>
+                        <div class="maintainLog_time">维护时间</div>
+                        <div class="informationManage">
+                        </div>
+                    </div>
+                </div>
+                <!--列表项-->
+                <div id="mainlogList">
+                    <!--<div class="informationList_line">-->
+                        <!--<div  class="informationList_inline">-->
+                            <!--<p class="maintainLog_equipName">设备名称</p>-->
+                            <!--<div class="maintainLog_title">标题</div>-->
+                            <!--<div class="maintainLog_person">维护人员</div>-->
+                            <!--<div class="maintainLog_time">2018-04-27</div>-->
+                            <!--<div class="informationManage">-->
+                                <!--<p class="showInformation">查看</p>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                </div>
+            </div>
+            <!--翻页-->
+            <div class="page_lineContainer">
+                <div class="pageContainer">
+                    <div class="pageNumber">
+                        <span id="mainlogPageNow">1</span>
+                        <span>/</span>
+                        <span id="mainlogPageCount">1页</span>
+                    </div>
+                    <div class="paging">
+                        <span id="preMainlogPage">上一页</span>
+                        <span id="nextMainlogPage">下一页</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+    <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+<!--工作日志详情-->
+<div class="modal fade" id="checkWorklog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    工作日志详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">演播厅名称</label>
+                        <div class="col-md-7">
+                            <p id="mallname" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">频道名称</label>
+                        <div class="col-md-7">
+                            <p id="channelname" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">节目名称</label>
+                        <div class="col-md-7">
+                            <p id="programename" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">开始时间</label>
+                        <div class="col-md-7">
+                            <p id="workStarttime" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">结束时间</label>
+                        <div class="col-md-7">
+                            <p id="workEndtime" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">使用时长</label>
+                        <div class="col-md-7">
+                            <p id="usedtime" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">工作人员</label>
+                        <div class="col-md-7">
+                            <p id="workers" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">联系人</label>
+                        <div class="col-md-7">
+                            <p id="username" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">联系电话</label>
+                        <div class="col-md-7">
+                            <p id="usertel" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">日志详情</label>
+                        <div class="col-md-7">
+                            <textarea id="loginfo" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">附件</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="worklogFileDownload" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--维护日志详情-->
+<div class="modal fade" id="checkMainlog" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    维护日志详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <p id="title" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">设备名称</label>
+                        <div class="col-md-7">
+                            <p id="deviceName" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">维护人</label>
+                        <div class="col-md-7">
+                            <p id="maintainUser" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">维护时间</label>
+                        <div class="col-md-7">
+                            <p id="maintainTime" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">详情</label>
+                        <div class="col-md-7">
+                            <textarea id="maintaininfo" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">附件</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="maintainFile" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modules/worklog.js"></script>
+<script src="js/modules/maintain.js"></script>
+<script src="js/pagesJS/LogRecord.js"></script>
+<!--日志头两个模块之间的切换-->
+<script type="text/javascript" src="js/Layout/cutOff_top.js"></script>
+</html>

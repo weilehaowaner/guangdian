@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta   http-equiv= "Pragma"   content= "no-cache" />
+    <meta   http-equiv= "Cache-Control"   content= "no-cache" />
+    <meta   http-equiv= "Expires"   content= "0" />
+    <title>登录账号</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/loginpage.css">
+</head>
+<body>
+<div class="bg">
+    <div class="row">
+        <div class="col-md-4">
+         <h1 class="title">演播厅集群管理系统</h1>
+           <div role="form" autocomplete="off">
+               <div class="form-group landing_form">
+                   <div class="input-group landing_input_group">
+                       <input class="input_align" type="text"autocomplete="off" name="landing" id="username"><span class="input_addSpan">用户名：</span>
+                   </div>
+                   <div class="input-group landing_input_group">
+                       <input class="input_align" type="password"autocomplete="off" name="landing" id="password"> <span  class="input_addSpan">密码：</span >
+                   </div>
+                    <div class="alignWithInput2">
+                        <div class="landing_checkbox">
+                                <input id="user" type="radio" checked="checked" name="ident" value="user">
+                                <label class="identity" id="forUser" for="user"> 用户</label>
+                                <input id="manager" type="radio"  name="ident" value="manager">
+                                <label class="identity" for="manager" > 管理员</label>
+                        </div>
+                        <input type="submit" class="getBack" id="login_on" value="登录" onclick="login();">
+                        <div class="landing_links"><a href="resetpassword.html">忘记密码</a></div>
+                    </div>
+
+               </div>
+           </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/pagesJS/loginpage.js"></script>
+</body>
+</html>

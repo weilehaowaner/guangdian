@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>监看结构图</title>
+	</head>
+	<style>
+		*{
+			margin: 0 0 0 0;
+			padding: 0 0 0 0;
+		}
+		.pic_box img{
+			position: relative;
+			width: 73%;
+
+		}
+		.modifyLeft{
+			left:16%;
+			top: 72%;
+			width: 51%;
+		}
+
+		.modifyWidth{
+			width:40%;
+		}
+		.modifyTop{
+			width:32%;
+			height:33%;
+		}
+		.noLineTell{
+			width:15%;
+			height:32%;
+			position:absolute;
+			top:10%;
+			right:2%;
+			background:#37a8fd;
+		}
+		.noLineTell ul{
+			list-style: none;
+			padding:0;
+		}
+		.noLineTell ul li{
+			width:100%;
+			height:30px;
+			padding-top:5px;
+			margin-top:5px;
+		}
+		.noLineTell_text,.normalButton{
+			text-align:center;
+		}
+		.normalButton button{
+			width:60%;
+			text-align: center;
+			border:1px solid #c0c0c0;
+			font-size: 0.3rem;
+			font-weight: 600;
+			height:100%;
+			background:white;
+		}
+		.noLineTell_text{
+			font-size:24px;
+		}
+		.buttons{
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			opacity: 0;
+		}
+		.signal,.light,.switch1,.switch2,.switch3,.switch4,.switch5{
+			position: absolute;
+			background-color: #1b6d85;
+			border-radius: 0px;
+		}
+		.container_box{
+			width: 100%;
+			height: 100%;
+		}
+		button:hover{
+			cursor: pointer;
+		}
+		.bgPic{
+			background-color: #ffffff;
+		}
+		.top1,.top2,.top3,.top4,.top5,.top6{
+			position: absolute;
+			font-size: 0.2rem;
+		}
+		.bottom1,.bottom2,.bottom3,.bottom4,.bottom5,.bottom6{
+			position: absolute;
+			font-size: 0.2rem;
+		}
+		.controlMachineRoom{
+			position: absolute;
+			font-size: 0.2rem;
+		}
+		@media screen and (max-width: 1024px) {
+			.pic_box img {
+				position: relative;
+				width: 95%;
+			}
+		}
+
+	</style>
+	<link rel="stylesheet" href="css/systemIframes.css"/>
+	<body>
+		<div class="pic_box">
+			<div class="bgPic">
+				<img src="../images/演播厅集群系统框图.svg">
+			</div>
+		</div>
+		<div class="buttons">
+			<div class="container_box">
+				<div class="make_container" id="A">
+					<button id="6" class="make turnTo_pdf signal" value="">信号源输入</button>
+				</div>
+				<div class="make_container" id="B">
+					<button id="7" class="make turnTo_pdf light" value="">光传输系统</button>
+				</div>
+				<div class="make_container" id="C">
+					<button id="8" class="make turnTo_pdf switch1" value="">切换台A</button>
+				</div>
+				<div class="make_container" id="D">
+					<button id="9" class="make turnTo_pdf switch2" value="">切换台B</button>
+				</div>
+				<div class="make_container" id="E">
+					<button id="10" class="make turnTo_pdf switch3" value="">矩阵A</button>
+				</div>
+				<div class="make_container" id="F">
+					<button id="11" class="make turnTo_pdf switch4" value="">矩阵B</button>
+				</div>
+				<div class="make_container" id="G">
+					<button id="12" class="make turnTo_pdf switch5" value="">矩阵M</button>
+				</div>
+
+
+				<!------------------------------------------------------------------>
+				<div class="make_container" >
+					<button id="19" class="make turnTo_pdf top1" value="">3选1</button>
+				</div>
+				<!--<div class="make_container">-->
+					<!--<button id="20" class="make turnTo_pdf top2" value="">加嵌器</button>-->
+				<!--</div>-->
+				<!--<div class="make_container">-->
+					<!--<button id="21" class="make turnTo_pdf top3" value="">视频分配</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="22" class="make turnTo_pdf top4" value="">3选1</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="23" class="make turnTo_pdf top5" value="">加嵌器</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="24" class="make turnTo_pdf top6" value="">视频分配</button>-->
+				<!--</div>-->
+				<div class="make_container" >
+					<button id="25" class="make turnTo_pdf bottom1" value="">3选1</button>
+				</div>
+				<!--<div class="make_container" >-->
+					<!--<button id="26" class="make turnTo_pdf bottom2" value="">加嵌器</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="27" class="make turnTo_pdf bottom3" value="">视频分配</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="28" class="make turnTo_pdf bottom4" value="">3选1</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="29" class="make turnTo_pdf bottom5" value="">加嵌器</button>-->
+				<!--</div>-->
+				<!--<div class="make_container" >-->
+					<!--<button id="30" class="make turnTo_pdf bottom6" value="">视频分配</button>-->
+				<!--</div>-->
+				<!--------------------------------------------------------------------->
+				<div class="make_container" >
+					<button id="39" class="make turnTo_pdf controlMachineRoom" value="">总控机房</button>
+				</div>
+			</div>
+		</div>
+		<div class="system_subList">
+			<p class="subsystemTitle">演播厅集群系统框图</p>
+			<ul id="subsystemList">
+
+			</ul>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.10.1.min.js"></script>
+	<script src="js/systemIframes.js"></script>
+	<script>
+        window.onload=function () {
+
+           var width=$(".bgPic img").width();
+            var height=$(".bgPic").height();
+			$(".signal").css("width",width*0.13+"px");
+            $(".signal").css("height",height*0.8+"px");
+            $(".signal").css("top",height*0.1+"px");
+            $(".signal").css("left",width*0.11+"px");
+
+            $(".light").css("width",width*0.13+"px");
+            $(".light").css("height",height*0.8+"px");
+            $(".light").css("top",height*0.1+"px");
+            $(".light").css("left",width*0.63+"px");
+
+            $(".switch1").css("width",width*0.03+"px");
+            $(".switch1").css("height",height*0.13+"px");
+            $(".switch1").css("left",width*0.33+"px");
+
+            $(".switch2").css("width",width*0.03+"px");
+            $(".switch2").css("height",height*0.13+"px");
+            $(".switch2").css("left",width*0.33+"px");
+
+            $(".switch3").css("width",width*0.03+"px");
+            $(".switch3").css("height",height*0.13+"px");
+            $(".switch3").css("left",width*0.33+"px");
+
+            $(".switch4").css("width",width*0.03+"px");
+            $(".switch4").css("height",height*0.13+"px");
+            $(".switch4").css("left",width*0.33+"px");
+
+            $(".switch5").css("width",width*0.03+"px");
+            $(".switch5").css("height",height*0.13+"px");
+            $(".switch5").css("left",width*0.33+"px");
+
+
+            $(".switch1").css("top",height*0.13+"px");
+            $(".switch2").css("top",height*0.27+"px");
+            $(".switch3").css("top",height*0.41+"px");
+            $(".switch4").css("top",height*0.545+"px");
+            $(".switch5").css("top",height*0.68+"px");
+
+            $(".top1").css("width",width*0.2+"px");
+            $(".top1").css("height",height*0.3+"px");
+            $(".top2").css("width",width*0.03+"px");
+            $(".top2").css("height",height*0.10+"px");
+            $(".top3").css("width",width*0.03+"px");
+            $(".top3").css("height",height*0.10+"px");
+            $(".top4").css("width",width*0.03+"px");
+            $(".top4").css("height",height*0.10+"px");
+            $(".top5").css("width",width*0.03+"px");
+            $(".top5").css("height",height*0.10+"px");
+            $(".top6").css("width",width*0.03+"px");
+            $(".top6").css("height",height*0.10+"px");
+
+            $(".bottom1").css("width",width*0.2+"px");
+            $(".bottom1").css("height",height*0.27+"px");
+            $(".bottom2").css("width",width*0.03+"px");
+            $(".bottom2").css("height",height*0.10+"px");
+            $(".bottom3").css("width",width*0.03+"px");
+            $(".bottom3").css("height",height*0.10+"px");
+            $(".bottom4").css("width",width*0.03+"px");
+            $(".bottom4").css("height",height*0.10+"px");
+            $(".bottom5").css("width",width*0.03+"px");
+            $(".bottom5").css("height",height*0.10+"px");
+            $(".bottom6").css("width",width*0.03+"px");
+            $(".bottom6").css("height",height*0.10+"px");
+
+            $(".top1").css("top",height*0.15+"px");
+            $(".top2").css("top",height*0.18+"px");
+            $(".top3").css("top",height*0.18+"px");
+
+
+            $(".top4").css("top",height*0.32+"px");
+            $(".top5").css("top",height*0.32+"px");
+            $(".top6").css("top",height*0.32+"px");
+
+
+            $(".top1").css("left",width*0.42+"px");
+            $(".top4").css("left",width*0.442+"px");
+            $(".bottom1").css("left",width*0.42+"px");
+            $(".bottom4").css("left",width*0.442+"px");
+
+            $(".top2").css("left",width*0.50+"px");
+            $(".top5").css("left",width*0.50+"px");
+            $(".bottom2").css("left",width*0.50+"px");
+            $(".bottom5").css("left",width*0.50+"px");
+
+
+            $(".top3").css("left",width*0.559+"px");
+            $(".top6").css("left",width*0.559+"px");
+            $(".bottom3").css("left",width*0.559+"px");
+            $(".bottom6").css("left",width*0.559+"px");
+
+            $(".bottom1").css("top",height*0.47+"px");
+            $(".bottom2").css("top",height*0.47+"px");
+            $(".bottom3").css("top",height*0.47+"px");
+
+            $(".bottom4").css("top",height*0.61+"px");
+            $(".bottom5").css("top",height*0.61+"px");
+            $(".bottom6").css("top",height*0.61+"px");
+
+
+            $(".controlMachineRoom").css("width",width*0.09+"px");
+            $(".controlMachineRoom").css("height",height*0.17+"px");
+            $(".controlMachineRoom").css("top",height*0.4+"px");
+            $(".controlMachineRoom").css("left",width*0.81+"px");
+
+			getBySystem(165);
+        };
+	</script>
+
+</html>

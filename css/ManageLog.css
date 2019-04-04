@@ -1,0 +1,63 @@
+.informationList_inline{
+    display: flex;
+    justify-content:space-between;
+}
+.checkBox{
+    width: 20px;
+    height: 100%;
+
+}
+.studioWithCheck{
+    margin: 0 0 0 15px;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+
+}
+.studio,.program,.channel,.ContactPerson{
+    height: 100%;
+    text-align: center;
+}
+.studio{
+    width: 150px;
+}
+.program{
+    width: 180px;
+}
+.channel{
+    width: 150px;
+}
+.ContactPerson{
+    width: 150px;
+}
+.buttonLine{
+    display: flex;
+    justify-content: center;
+}
+
+.maintainLog_equipName,.maintainLog_title,.maintainLog_person,.maintainLog_time{
+    height: 100%;
+    text-align: center;
+}
+.maintainLog_equipName{
+    margin: 0 0 0 10px;
+    width:100px;
+}
+.maintainLog_title{
+    width: 220px;
+}
+.maintainLog_person{
+    width: 100px;
+}
+.maintainLog_time{
+    width: 150px;
+}
+.variousBox_right{
+    width: 90%;
+}
+
+.searchBox {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px;
+}

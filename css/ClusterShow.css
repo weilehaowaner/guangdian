@@ -1,0 +1,203 @@
+.iframeShow {
+    height: 100%;
+}
+.iframeShow iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.pdfShowBox {
+    display: none;
+    position: absolute;
+    top:67px;
+    width: 100%;
+    height: calc(100% - 127px);
+}
+.pdfShowBox iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*关闭pdf按钮*/
+.closepdf {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    height: auto;
+    padding: 10px;
+}
+
+/*加载圈样式*/
+.spinner {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 160px;
+    height: 160px;
+    margin-left: 0;
+    margin-top: 0;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+.loaderdot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgb(29, 140, 248);
+}
+
+/*工具栏*/
+.control-panel {
+    z-index: 999;
+    position: absolute;
+    right: 0;
+    top: 180px;
+    width: 0;
+    /*height: 300px;*/
+    background-color: rgba(255,255,255,1);
+    border-radius: 4px;
+
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+
+    -webkit-box-shadow: -4px 0px 21px -7px rgb(0,0,0);
+    -moz-box-shadow: -4px 0px 21px -7px rgb(0,0,0);
+    box-shadow: -4px 0px 21px -7px rgb(0,0,0);
+}
+
+.collapse-btn {
+    width: 35px;
+    height: 70px;
+    padding-top: 3px;
+    vertical-align: middle;
+    background-color: #337ab7;
+    display: block;
+    top: 180px;
+    right: 0;
+    position: absolute;
+    z-index: 1001;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;}
+.collapse-btn:hover {
+    color: rgb(197, 198, 198);
+}
+
+.left-round-btn {
+    -moz-border-top-left-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+
+    -moz-box-shadow:    -3px 3px 8px -3px black;
+    -webkit-box-shadow: -3px 3px 8px -3px black;
+    box-shadow:         -3px 3px 8px 8px -3px black;
+}
+
+.pdftools {
+    position: relative;
+}
+.pdftools a {
+    /*overflow: hidden;*/
+}
+.pdftools a img {
+    float: left;
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+.pdftools a p {
+    margin: 0;
+    line-height: 25px;
+}
+
+.corlorselect{
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+.color_btn{
+    margin: 0;
+    padding: 0;
+    height: 3px;
+    width: 0.27rem;
+}
+
+.colorUl{
+    display: none;
+    position: absolute;
+    top: -112px;
+    left: -2px;
+    padding: 0;
+    margin: 0;
+    width: 25px;
+
+}
+.colorUl li{
+    margin: 0 ;
+    padding: 0;
+    list-style-type: none;
+    height: 2px;
+    width: 25px;
+}
+.colorNow{
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #299fe5;
+    background-color: #ff0000;
+}
+
+
+.paintingbox {
+    position: absolute;
+    top: 0;
+    width:100%;
+    height: 100%;
+}
+
+.deviceList {
+    display: none;
+    position: absolute;
+    top: 235px;
+    left: -140px;
+    width: 140px;
+}
+.deviceList a {
+    text-align: center;
+}
+
+/*集群展示无设备文档*/
+a.none-device {
+    background-color: #eee;
+    color: #999;
+}
+a.none-device:hover {
+     background-color: #eee;
+     cursor: auto;
+     color: #999;
+}
+a.none-device:focus {
+    background-color: #eee;
+    cursor: auto;
+    color: #999;
+}

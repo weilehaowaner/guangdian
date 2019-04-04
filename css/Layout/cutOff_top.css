@@ -1,0 +1,41 @@
+/*工作日志维护日志顶栏*/
+/**/
+.logs{
+    width: 100%;
+    height: 8vh;
+    border-bottom: solid 2px #000000;
+
+}
+.logTitle{
+    width: 100px;
+    height: 100%;
+    line-height: 8vh;
+    cursor: pointer;
+}
+.logTitle_right{
+    text-align: right;
+}
+.logTitle_left{
+    text-align: left;
+}
+.logsCenter{
+    margin: 0 auto;
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /*垂直居中竖条*/
+    align-items: center;
+
+}
+.PartingLine{
+    height: 5vh;
+    width: 2px;
+    border-radius: 1px;
+    background-color:#000000;
+}
+.selectLog{
+    color: #f83b3b;
+}
+/**/
+/*工作日志维护日志顶栏*/

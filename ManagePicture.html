@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页图片管理</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fileinput.min.css"/>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="css/ManagePicture.css">
+</head>
+<body>
+<nav class="navbar nav-pills">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<a class="navbar-brand" href="Homepage.html">
+				<div class="logo_image">
+					<img class="logo_one" src="images/logo.png"/>
+					<img class="logo_two" src="images/logo_title.png"/>
+				</div>
+			</a>
+		</div>
+		<div class="container_list">
+			<ul id="top-nav" class="nav navbar-nav sections">
+				<li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+				<li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+				<li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+				<li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+				<li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+				<li class="content"><a class="current" href="ManageUser.html"><p>后台管理</p></a></li>
+			</ul>
+			<ul class="nav navbar-nav unload">
+				<li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<div class="manager_main_page" style="">
+	<div class="navbar navbar-vertal">
+		<ul class="nav">
+			<li>
+				<a href="ManageUser.html">
+					<p>用户管理</p>
+				</a>
+			</li>
+			<li class="current_content_active">
+				<a href="ManagePicture.html">
+					<p>首页图片管理</p>
+				</a>
+			</li>
+			<li>
+				<a href="ManageCluster.html">
+					<p>演播厅集群管理</p>
+				</a>
+			</li>
+			<li>
+				<a href="ManageEquipmentDocument.html">
+					<p>设备文档管理</p>
+				</a>
+			</li>
+			<li>
+				<a href="ManageLog.html">
+					<p>日志记录管理</p>
+				</a>
+			</li>
+			<li>
+				<a href="ManageMessage.html">
+					<p>留言板管理</p>
+				</a>
+			</li>
+			<li>
+				<a href="ManageNotification.html">
+					<p>通知管理</p>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<div class="manager_main_content">
+		<div class="paddingBox">
+			<div class="container">
+				<div class="page-header">
+					<h1>首页轮播图片管理
+						<small>要求所有图片尺寸一致</small>
+					</h1>
+				</div>
+				<div id="pictureList" class="row">
+					<!--<div class="col-sm-6 col-md-3">-->
+						<!--<div class="thumbnail">-->
+							<!--<img src="images/slide1.jpg"-->
+								 <!--alt="通用的占位符缩略图">-->
+							<!--<div class="caption">-->
+								<!--<h4>文字描述</h4>-->
+								<!--<p>一些示例文本。一些示例文本。</p>-->
+								<!--<p>-->
+									<!--<a href="#" class="btn btn-primary" role="button">-->
+										<!--下载-->
+									<!--</a>-->
+									<!--<a href="#" class="btn btn-danger" role="button">-->
+										<!--删除-->
+									<!--</a>-->
+								<!--</p>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<button type="button" class="btn btn-primary center-block" data-toggle="modal" data-target="#addPicture">添加</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+	<p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+<!--添加首页图片-->
+<div class="modal fade" id="addPicture" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title">
+					添加首页图片
+				</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal" id="addPictureForm" role="form">
+					<div class="form-group">
+						<label class="col-sm-3 control-label">选择图片</label>
+						<div class="col-sm-7">
+							<input id="newPicture" type="file" class="file">
+						</div>
+					</div>
+					<div class="form-group">
+						<label class="col-md-3 control-label">文字描述</label>
+						<div class="col-md-7">
+							<textarea id="newDescription" class="form-control" rows="5"></textarea>
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+				<button type="submit" class="btn btn-primary" onclick="pictureManage.addData()">
+					确定
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/fileinput.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modules/picture.js"></script>
+<script src="js/pagesJS/ManagePicture.js"></script>
+</html>

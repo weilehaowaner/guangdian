@@ -1,0 +1,44 @@
+.buttonLine{
+    display: flex;
+    justify-content: center;
+}
+.informationList{
+    margin: 0 auto;
+    width: 100%;
+}
+.variousBox_center{
+    justify-content: left;
+}
+.dropDown_group{
+    justify-content: left;
+    z-index: 1;
+}
+.messageBord_title,.messageBord_content,.messageBord_person,.messageBord_time{
+    text-align: center;
+    height: 100%;
+}
+.informationList_inline{
+    position: relative;
+    padding: 0 0 0 40px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.messageBord_title{
+    width: 150px;
+}
+.messageBord_content{
+    width: 250px;
+    height: 100%;
+    overflow: hidden;
+}
+.messageBord_person{
+    width: 100px;
+}
+.messageBord_time{
+    width: 150px;
+}
+.informationList{
+    margin-top: 20px;
+}
+

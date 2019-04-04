@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设备文档</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!--详细列表-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/informationList.css">
+    <!--翻页和按钮-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/pageingAndButton.css">
+    <link rel="stylesheet" type="text/css" href="css/EquipmentDocument.css">
+</head>
+<body>
+<nav class="navbar nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Homepage.html">
+                <div class="logo_image">
+                    <img class="logo_one" src="images/logo.png"/>
+                    <img class="logo_two" src="images/logo_title.png"/>
+                </div>
+            </a>
+        </div>
+        <div class="container_list">
+            <ul id="top-nav" class="nav navbar-nav sections">
+                <li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+                <li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+                <li class="content"><a class="current"href="EquipmentDocument.html"><p>设备文档</p></a></li>
+                <li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+                <li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+                <!--<li class="content"><a href="ManagePicture.html"><p>后台管理</p></a></li>-->
+            </ul>
+            <ul class="nav navbar-nav unload">
+                <li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main_content">
+
+    <div class="paddingBox">
+        <div class="searchBox">
+            <div class="row">
+                <form class="form-horizontal" role="form" onsubmit="return false;">
+                    <div class="form-group  col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                        <label class="col-sm-4 control-label">系统</label>
+                        <div class="col-sm-8">
+                            <select id="searchsystem" class="form-control ">
+                                <option data-systemid="all">全部</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group  col-xs-4 col-sm-4 col-md-4 col-lg-3">
+                        <label class="col-sm-4 control-label">子系统</label>
+                        <div class="col-sm-8">
+                            <select id="searchsubsystem" class="form-control ">
+                                <option data-subsystemid="all">全部</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group col-sm-1">
+                        <div class="input-group ">
+                            <button id="refreshBtn" class="btn btn-primary" type="button" onclick=""><span class="glyphicon glyphicon-repeat"></span></button>
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                    <div class="form-group col-xs-4 col-sm-4 col-md-3 col-lg-2 pull-right">
+                        <div class="input-group ">
+                            <input id="searchdevicename" type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button" onclick="deviceShow.search();"><img src="images/sousuo.png"></button>
+								</span>
+                        </div>
+                        <!-- /input-group -->
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--信息列表-->
+        <div class="informationList">
+            <!--列表目录-->
+            <div class="informationList_line informationList_lineTitle">
+                <div class="informationList_inline">
+                    <p class="equipName">设备名称</p>
+                    <div class="equipIntroduce">使用手册</div>
+                    <div class="equipExperience">使用经验</div>
+                    <div class="equipLocation">设备位置</div>
+                    <div class="informationManage">
+                    </div>
+                </div>
+            </div>
+            <!--列表项-->
+            <div id="equipDocumentList">
+                <!--设备文档列表开始--假数据-->
+                <!--<div class="informationList_line">-->
+                    <!--<div class="informationList_inline">-->
+                        <!--<p class="equipName">设备名称</p>-->
+
+                        <!--<div class="equipIntroduce"><a href="" class="blueLink">使用手册</a></div>-->
+                        <!--<div class="equipExperience"><a href="" class="blueLink">使用经验</a></div>-->
+                        <!--<div class="equipLocation"><a href="" class="blueLink">设备位置</a></div>-->
+                        <!--<div class="informationManage">-->
+                            <!--<p class="showInformation" data-toggle="modal" data-target="#"-->
+                               <!--onclick="deviceManage.checkData(this)">查看</p>-->
+
+                            <!--<p class="changeInformation" data-toggle="modal" data-target="#editMessage">修改</p>-->
+
+                            <!--<p class="deleteInformation" onclick="deviceManage.deleData(this);">删除</p>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--设备文档列表结束--假数据-->
+            </div>
+
+        </div>
+        <!--翻页-->
+        <div class="page_lineContainer">
+            <div class="pageContainer">
+                <div class="pageNumber">
+                    <span id="DevicePageNow">1页</span>
+                    <span>/</span>
+                    <span id="devicePageCount">1页</span>
+                </div>
+                <div class="paging">
+                    <span id="preDevicePage">上一页</span>
+                    <span id="nextDevicePage">下一页</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<footer>
+    <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+    <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+<!--设备详情-->
+<div class="modal fade" id="checkDevice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    设备详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">厂家信息</label>
+                        <div class="col-md-7">
+                            <textarea id="venderinfo" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">功能简介</label>
+                        <div class="col-md-7">
+                            <textarea id="introduction" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/Layout/SelectIcon.js"></script>
+<script src="js/Layout/dropDown_selects.js"></script>
+<script src="js/modules/system.js"></script>
+<script src="js/modules/subSystem.js"></script>
+<script src="js/modules/device.js"></script>
+<script src="js/pagesJS/EquipmentDocument.js"></script>
+</html>

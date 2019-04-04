@@ -1,0 +1,263 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css"/>
+    <link href="css/bootstrap-table.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fileinput.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!--详细列表-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/informationList.css">
+    <!--各种框-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/variousBox.css">
+    <!--翻页和按钮-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/pageingAndButton.css">
+    <link rel="stylesheet" type="text/css" href="css/MessageBoard.css">
+</head>
+<body>
+<nav class="navbar nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Homepage.html">
+                <div class="logo_image">
+                    <img class="logo_one" src="images/logo.png"/>
+                    <img class="logo_two" src="images/logo_title.png"/>
+                </div>
+            </a>
+        </div>
+        <div class="container_list">
+            <ul id="top-nav" class="nav navbar-nav sections">
+                <li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+                <li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+                <li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+                <li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+                <li class="content"><a class="current" href="MessageBoard.html"><p>留言板</p></a></li>
+                <!--<li class="content"><a href="ManagePicture.html"><p>后台管理</p></a></li>-->
+            </ul>
+            <ul class="nav navbar-nav unload">
+                <li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="main_content">
+    <div class="searchBox">
+        <div class="row">
+            <form class="form-horizontal" role="form" onsubmit="return false;">
+                <div class="form-group  col-xs-6 col-sm-8 col-md-8 col-lg-7">
+                    <label class="col-sm-3 col-lg-2 control-label">时间区间</label>
+                    <div class="col-sm-3">
+                        <input id="searchMessageStarttime" class="form-control" type="text" value="">
+                    </div>
+                    <label class="col-sm-1 control-label" style="text-align: center;">&mdash;</label>
+                    <div class="col-sm-3">
+                        <input id="searchMessageEndtime" class="form-control" type="text" value="">
+                    </div>
+                    <div class="col-sm-2">
+                        <button class="btn btn-primary btn-xs form-control" type="button" onclick="message.screenByTime();">筛选</button>
+                    </div>
+                </div>
+                <div class="form-group col-sm-1">
+                    <div class="input-group ">
+                        <button id="refreshBtn" class="btn btn-primary" type="button" onclick=""><span class="glyphicon glyphicon-repeat"></span></button>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+                <div class="form-group col-xs-4 col-sm-4 col-md-3 col-lg-2 pull-right" style="padding-right: 30px;">
+                    <div class="input-group ">
+                        <input id="searchmessage" type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+									<button class="btn btn-primary" type="button" onclick="message.search();"><img src="images/sousuo.png"></button>
+								</span>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="paddingBox">
+        <div class="tablemanage">
+            <div class="btn-group" style="margin: 30px 0;">
+                <button id="renderAllMessage" type="button" class="btn btn-primary">All</button>
+                <button id="renderMyMessage" type="button" class="btn btn-default">我的</button>
+            </div>
+            <table id="messageTable"></table>
+        </div>
+
+        <div class="buttonLine">
+            <button class="btn btn-primary currencyBtn" data-toggle="modal" data-target="#addMessage">添加</button>
+        </div>
+    </div>
+
+
+</div>
+<footer>
+    <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+    <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+<!--添加留言-->
+<div class="modal fade" id="addMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加留言
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="addMessageForm" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <input id="newMessageTitle" type="text" class="form-control input-lg" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容（精简）</label>
+                        <div class="col-md-7">
+                            <textarea id="newMessageContent" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">添加图片</label>
+                        <div class="col-sm-5">
+                            <input id="newMessageImg" type="file" class="file">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button id="addSub" type="submit" class="btn btn-primary" onclick="message.addMessage();">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--修改留言-->
+<div class="modal fade" id="editMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    修改留言
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="editMessageForm" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <input id="editMessageTitle" type="text" class="form-control input-lg" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容（精简）</label>
+                        <div class="col-md-7">
+                            <textarea id="editMessageContent" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">修改图片</label>
+                        <div class="col-sm-5">
+                            <input id="editMessageFile" type="file" class="file">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button id="editSub" type="submit" class="btn btn-primary">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--留言详情-->
+<div class="modal fade" id="checkMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    留言板详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <p id="checkMessageTitle" class="form-control-static"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容</label>
+                        <div class="col-md-7">
+                            <textarea id="checkMessageContent" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">上传人员</label>
+                        <div class="col-md-7">
+                            <p id="checkMessageUser" class="form-control-static"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">上传时间</label>
+                        <div class="col-md-7">
+                            <p id="checkMessageAddTime" class="form-control-static"></p>
+                        </div>
+                    </div>
+
+                    <div class="form-group" id="checkMessageFile_group">
+                        <label class="col-sm-3 control-label">附件</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="checkMessageFile" class="downloadLink" href="" target="_blank">下载</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-datetimepicker.min.js"></script>
+<script src="js/bootstrap-table.min.js"></script>
+<!-- 引入中文语言包 -->
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/fileinput.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/Layout/SelectIcon.js"></script>
+<script src="js/Layout/dropDown_selects.js"></script>
+<script src="js/modules/messageBoard.js"></script>
+<script src="js/pagesJS/MessageBoard.js"></script>
+<script>
+    // console.log(getCookie("zjrtusername"));
+</script>
+</html>

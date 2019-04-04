@@ -1,0 +1,48 @@
+.informationList{
+    width: 100%;
+}
+.studio,.program,.channel,.ContactPerson{
+    height: 100%;
+    text-align: center;
+}
+.studio{
+    width: 150px;
+}
+.program{
+    width: 180px;
+}
+.channel{
+    width: 150px;
+}
+.ContactPerson{
+    width: 150px;
+}
+.informationList_inline{
+    display: flex;
+    justify-content:space-between;
+}
+
+.maintainLog_equipName,.maintainLog_title,.maintainLog_person,.maintainLog_time{
+    height: 100%;
+    text-align: center;
+}
+.maintainLog_equipName{
+    margin: 0 0 0 10px;
+    width:100px;
+}
+.maintainLog_title{
+    width: 220px;
+}
+.maintainLog_person{
+    width: 100px;
+}
+.maintainLog_time{
+    width: 150px;
+}
+.variousBox_right{
+    width: 100%;
+}
+
+.searchBox {
+    padding-top: 30px;
+}

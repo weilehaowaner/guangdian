@@ -1,0 +1,32 @@
+.informationList_inline{
+    display:flex;
+    justify-content: space-between;
+}
+.equipIntroduce,.equipExperience,.equipLocation,.equipName{
+    text-align: center;
+    height: 100%;
+}
+.equipName{
+    width: 120px;
+}
+.equipIntroduce{
+    width: 150px;
+}
+.equipExperience{
+    width: 150px;
+}
+.equipLocation{
+    width: 150px;
+}
+.buttonLine{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.searchBox {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 30px
+}

@@ -1,0 +1,213 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通知管理</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- 引入bootstrap-table样式 -->
+    <link href="css/bootstrap-table.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/fileinput.min.css"/>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <!--翻页和按钮-->
+    <link rel="stylesheet" type="text/css" href="css/Layout/pageingAndButton.css">
+    <link rel="stylesheet" type="text/css" href="css/ManageNotification.css">
+</head>
+<body>
+<nav class="navbar nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Homepage.html">
+                <div class="logo_image">
+                    <img class="logo_one" src="images/logo.png"/>
+                    <img class="logo_two" src="images/logo_title.png"/>
+                </div>
+            </a>
+        </div>
+        <div class="container_list">
+            <ul id="top-nav" class="nav navbar-nav sections">
+                <li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+                <li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+                <li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+                <li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+                <li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+                <li class="content"><a class="current" href="ManageUser.html"><p>后台管理</p></a></li>
+            </ul>
+            <ul class="nav navbar-nav unload">
+                <li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="manager_main_page" style="">
+    <div class="navbar navbar-vertal">
+        <ul class="nav">
+            <li>
+                <a href="ManageUser.html">
+                    <p>用户管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="ManagePicture.html">
+                    <p>首页图片管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="ManageCluster.html">
+                    <p>演播厅集群管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="ManageEquipmentDocument.html">
+                    <p>设备文档管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="ManageLog.html">
+                    <p>日志记录管理</p>
+                </a>
+            </li>
+            <li>
+                <a href="ManageMessage.html">
+                    <p>留言板管理</p>
+                </a>
+            </li>
+            <li class="current_content_active">
+                <a href="ManageNotification.html">
+                    <p>通知管理</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="manager_main_content">
+        <div class="paddingBox">
+            <div class="tablemanage">
+                <div class="page-header">
+                    <h1>通知公告管理
+                        <small>首页将显示前四条公告</small>
+                    </h1>
+                </div>
+                <table id="noticetable"></table>
+            </div>
+
+            <div class="buttonLine">
+                <button class="btn btn-primary currencyBtn" data-toggle="modal" data-target="#addNotice">添加</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+    <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+
+<!--添加通知公告-->
+<div class="modal fade" id="addNotice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    添加通知公告
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="addForm" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <input id="addboardname" type="text" class="form-control " placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容</label>
+                        <div class="col-md-7">
+                            <input id="addboardvalue" type="text" class="form-control " placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">相关人员</label>
+                        <div class="col-md-7">
+                            <input id="addusername" type="text" class="form-control " placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">附件</label>
+                        <div class="col-sm-7">
+                            <input id="addfile" type="file" class="file">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button type="submit" class="btn btn-primary" onclick="notificationManage.addData();">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--通知公告详情-->
+<div class="modal fade" id="checkNotice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    通知公告详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">标题</label>
+                        <div class="col-md-7">
+                            <p id="boardname" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容</label>
+                        <div class="col-md-7">
+                            <textarea id="boardvalue" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">相关人员</label>
+                        <div class="col-md-7">
+                            <p id="username" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">附件</label>
+                        <div class="col-md-7">
+                            <p class="form-control-static"><a id="file" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- bootstrap-table.min.js -->
+<script src="js/bootstrap-table.min.js"></script>
+<!-- 引入中文语言包 -->
+<script src="js/bootstrap-table-zh-CN.min.js"></script>
+<script src="js/fileinput.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modules/notification.js"></script>
+<script src="js/pagesJS/ManageNotification.js"></script>
+</html>

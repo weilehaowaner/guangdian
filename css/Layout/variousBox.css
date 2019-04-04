@@ -1,0 +1,173 @@
+/*下拉、搜索、输入框*****************/
+/***/
+.variousBox{
+    width: 100%;
+    height: 10vh;
+
+}
+.variousBox_center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.variousBox_right{
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+/*下拉框与输入框控制样式统一*/
+/**/
+
+/*框和题目的布局*/
+.dropDown_group,.simpleInput_group{
+    width: 250px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 100%;
+
+}
+
+/*下拉框与输入框*/
+.select_content .select,.simpleInput_input{
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    background-color: #fff;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+}
+
+/**/
+/*下拉框与输入框控制样式统一*/
+
+/*输入框与搜索框样式统一*/
+/**/
+.simpleInput_input{
+    padding: 6px 12px;/*bootstrap默认样式*/
+}
+/**/
+/*输入框与搜索框样式统一*/
+
+
+/*下拉框**************************************************/
+/**/
+
+.dropDownTitle{
+    font-size: 14px;
+    margin: 0 5px 0 0;
+}
+
+.select{
+    width: 100%;
+}
+.select_content .select {
+
+    position: relative;
+}
+/*transform(缩放、旋转、平移)，显示的是最终效果，没有动画过程*/
+/*transition是对元素本身的属性(比如：width、height)设置动画效果*/
+.select_content .select:after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-left: 1px #ccc solid;
+    border-bottom: 1px #ccc solid;
+    position: absolute;
+    top: 11px;
+    right: 12px;
+    transform: rotate(-45deg);
+}
+.select_content .select p {
+    padding: 0 15px;
+    line-height: 40px;
+    cursor: pointer;
+}
+/*设置下拉框收起时的高度过渡动画*/
+.select_content .select ul {
+    list-style-type: none;
+    background-color: #fff;
+    width: 100%;
+    overflow-y: auto;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    max-height: 0;
+    transition: max-height .3s ease-out;
+}
+.select_content .select ul li {
+    padding: 0 15px;
+    line-height: 40px;
+    cursor: pointer;
+}
+.select_content .select ul li:hover {
+    background-color: #e0e0e0;
+}
+.select_content .select ul li.selected {
+
+    color: #fff;
+}
+/*下拉框展开时调用动画slide-down*/
+/*transform-origin设置缩放下拉框的基点位置*/
+.select_content .select.open ul {
+    max-height: 250px;
+    border: solid 2px #ccc;
+    border-radius: 5px;
+    -webkit-animation: slide-down .5s ease-in;
+    transition: max-height .3s ease-in;
+    transform-origin: 50% 0;
+}
+/*设置展开时下拉箭头的旋转动画*/
+.select_content .select.open:after {
+    transform: rotate(-225deg);
+    top: 18px;
+    transition: all .3s ease-in-out;
+}
+/*为下拉框展开时添加名称为slide-down的关键帧动画*/
+@-webkit-keyframes slide-down{
+    0%{transform: scale(1,0);}
+    100%{transform: scale(1,1);}
+}
+/**/
+/*下拉框******************************************************************/
+
+
+/*搜索框**********************/
+/***/
+.input_group{
+    margin:0 0 0 0;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    /*修改搜索框大小*/
+    width: 200px;
+}
+.input_group .form-control{
+    /*40px为右侧搜索框长度*/
+    width:calc(100% - 40px);
+    border-radius: 3px;
+    border: 2px solid  rgb(181,210,226);
+    background-color: #FFFFFF;
+    color: black;
+}
+.input_group input, .input_search{
+    height: 40px;
+}
+.input_search{
+    /*修改搜索框长度要同时修改*/
+    /*.input_group .form-control*/
+    width: 40px;
+    border-radius: 3px;
+    border: 2px solid rgb(66,160,214);
+    background: rgb(66,160,214);
+}
+/***/
+/*搜索框**********************/
+
+/***/
+/*下拉、搜索、输入框*****************/

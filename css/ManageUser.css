@@ -1,0 +1,28 @@
+.informationList_inline{
+    display: flex;
+    justify-content: space-between;
+}
+.workNumber,.name,.password,.department,.post,.phoneNumber{
+    height: 100%;
+    text-align: center;
+}
+.workNumber{
+    width: 150px;
+}
+.name{
+    width: 100px;
+}
+.password{
+    width: 150px;
+}
+.department{
+    width: 80px;
+}
+.post{
+    width: 80px;
+}
+.phoneNumber{
+    width: 150px;
+}
+
+

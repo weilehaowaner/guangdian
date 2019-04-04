@@ -1,0 +1,60 @@
+/**翻页表**/
+/**/
+.paging,.pageContainer,.page_lineContainer,.pageNumber{
+    height: 7vh;
+}
+
+.page_lineContainer{
+    padding: 0 5% 0 0 ;
+    width: 100%;
+}
+.pageContainer{
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+
+}
+.paging{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 110px;
+    color: rgb(66,160,214);
+}
+.paging>span{
+    cursor: pointer;
+}
+.pageNumber{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width:140px;
+
+}
+.pageNumber>span{
+    margin:0 10px 0 0;
+    color: rgb(85,85,85);
+}
+/**/
+/**翻页表**/
+
+/*按钮*/
+/**/
+.buttonLine{
+    height: 40px;
+}
+.currencyBtn{
+    margin: 0 20px;
+    height: 40px;
+    width: 100px;
+    background:rgb(66,160,214);
+    border: 1px solid rgb(66,160,214);
+}
+.buttonLine{
+    display: flex;
+    justify-content: center;
+}
+/**/
+/*按钮*/

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>集群展示</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/sweetalert.css">
+    <link rel="stylesheet" href="css/ClusterShow.css"/>
+</head>
+<body>
+<nav class="navbar nav-pills">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="Homepage.html">
+                <div class="logo_image">
+                    <img class="logo_one" src="images/logo.png"/>
+                    <img class="logo_two" src="images/logo_title.png"/>
+                </div>
+            </a>
+        </div>
+        <div class="container_list">
+            <ul id="top-nav" class="nav navbar-nav sections">
+                <li class="content"><a href="Homepage.html"><p>首页</p></a></li>
+                <li class="content"><a class="current" href="ClusterShow.html"><p>集群展示</p></a></li>
+                <li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+                <li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+                <li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+                <!--<li class="content"><a href="ManagePicture.html"><p>后台管理</p></a></li>-->
+            </ul>
+            <ul class="nav navbar-nav unload">
+                <li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="manager_main_page">
+    <div class="navbar navbar-vertal">
+        <ul class="nav " id="systemList">
+
+        </ul>
+    </div>
+    <div class="manager_main_content">
+        <div class="iframeShow">
+            <iframe id="pdfIframe" src="" frameborder="0"></iframe>
+        </div>
+        <div id="pdfShowBox" class="pdfShowBox">
+            <!--加载提示圈-->
+            <div id="spinner" class="spinner"></div>
+            <iframe id="pdfJS_iframe" class="pdf_show " src="" scrolling="no">\n\t\t</iframe>
+            <div class="control-panel">
+                <div class="pdftools">
+                    <a id="biggerpdf" href="javascript:" class="list-group-item">
+                        <img src="images/biger.png">
+                        <p>放大</p>
+                    </a>
+                    <a id="smallerpdf" href="javascript:" class="list-group-item">
+                        <img src="images/smaller.png">
+                        <p>缩小</p>
+                    </a>
+                    <a id="paintingbtn" href="javascript:" class="list-group-item">
+                        <img src="images/pencil.png">
+                        <p>涂鸦</p>
+                        <div id="corlorselect" class="corlorselect">
+                            <ul id="colorUl" class="colorUl ">
+                                <li style="background: #ff0022" class="color_btn"></li>
+                                <li style="background: #ff0043" class="color_btn"></li>
+                                <li style="background: #ff0066" class="color_btn"></li>
+                                <li style="background: #ff0084" class="color_btn"></li>
+                                <li style="background: #ff009c" class="color_btn"></li>
+                                <li style="background: #ff00c0" class="color_btn"></li>
+                                <li style="background: #ff00cd" class="color_btn"></li>
+                                <li style="background: #fc00ff" class="color_btn"></li>
+                                <li style="background: #f600ff" class="color_btn"></li>
+                                <li style="background: #cc00ff" class="color_btn"></li>
+                                <li style="background: #ba00ff" class="color_btn"></li>
+                                <li style="background: #a800ff" class="color_btn"></li>
+                                <li style="background: #9000ff" class="color_btn"></li>
+                                <li style="background: #7200ff" class="color_btn"></li>
+                                <li style="background: #4e00ff" class="color_btn"></li>
+                                <li style="background: #3c00ff" class="color_btn"></li>
+                                <li style="background: #2400ff" class="color_btn"></li>
+                                <li style="background: #0000ff" class="color_btn"></li>
+                                <li style="background: #0042ff" class="color_btn"></li>
+                                <li style="background: #0060ff" class="color_btn"></li>
+                                <li style="background: #0096ff" class="color_btn"></li>
+                                <li style="background: #00c6ff" class="color_btn"></li>
+                                <li style="background: #00f6ff" class="color_btn"></li>
+                                <li style="background: #00ffd8" class="color_btn"></li>
+                                <li style="background: #00ffba" class="color_btn"></li>
+                                <li style="background: #00ff90" class="color_btn"></li>
+                                <li style="background: #00ff6c" class="color_btn"></li>
+                                <li style="background: #00ff42" class="color_btn"></li>
+                                <li style="background: #00ff18" class="color_btn"></li>
+                                <li style="background: #00ff00" class="color_btn"></li>
+                                <li style="background: #24ff00" class="color_btn"></li>
+                                <li style="background: #30ff00" class="color_btn"></li>
+                                <li style="background: #3cff00" class="color_btn"></li>
+                                <li style="background: #4eff00" class="color_btn"></li>
+                                <li style="background: #60ff00" class="color_btn"></li>
+                                <li style="background: #72ff00" class="color_btn"></li>
+                                <li style="background: #90ff00" class="color_btn"></li>
+                                <li style="background: #aeff00" class="color_btn"></li>
+                                <li style="background: #d2ff00" class="color_btn"></li>
+                                <li style="background: #f0ff00" class="color_btn"></li>
+                                <li style="background: #fff600" class="color_btn"></li>
+                                <li style="background: #ffd200" class="color_btn"></li>
+                                <li style="background: #ffc000" class="color_btn"></li>
+                                <li style="background: #ffa800" class="color_btn"></li>
+                                <li style="background: #ff9000" class="color_btn"></li>
+                                <li style="background: #ff7800" class="color_btn"></li>
+                                <li style="background: #ff4e00" class="color_btn"></li>
+                                <li style="background: #ff4200" class="color_btn"></li>
+                                <li style="background: #ff3c00" class="color_btn"></li>
+                                <li style="background: #ff2a00" class="color_btn"></li>
+                                <li style="background: #ff1e00" class="color_btn"></li>
+                                <li style="background: #ff1800" class="color_btn"></li>
+                                <li style="background: #ff0600" class="color_btn"></li>
+                                <li style="background: #ff0000" class="color_btn color_btn_selected"></li>
+                            </ul>
+                            <div class="colorNow" id="colorNow"></div>
+                        </div>
+                    </a>
+                    <a id="wipe" href="javascript:" class="list-group-item">
+                        <img src="images/eraser.png">
+                        <p>橡皮檫</p>
+                    </a>
+                    <a id="clearCanvas" href="javascript:" class="list-group-item">
+                        <img src="images/clear.png">
+                        <p>清除画布</p>
+                    </a>
+                    <a id="showDevice" href="javascript:" class="list-group-item">
+                        <img src="images/equipment.png">
+                        <p>设备文档</p>
+                    </a>
+                    <a class="list-group-item" id="saveCanvas" data-toggle="modal" data-target="#upLoadCanvas">
+                        <img src="images/save.png">
+                        <p>保存画布</p>
+                    </a>
+                    <div id="deviceList" class="deviceList">
+                        <!--<a href="javascript:" class="list-group-item">设备名称</a>-->
+                    </div>
+                </div>
+            </div>
+            <div class="paintingbox" style="display: none;">
+                <canvas id="paintingCanvas" style="display: none;"></canvas>
+            </div>
+            <div id="panelBtn" class="collapse-btn left-round-btn icon icon-angle-circled-left">工<br>具<br>栏</div>
+            <a id="closepdf" href="#" class="closepdf"><img src="images/close.png"></a>
+        </div>
+    </div>
+</div>
+<footer>
+    <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+    <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+</footer>
+<!--设备详情-->
+<div class="modal fade" id="checkDevice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    设备详情
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">设备名称</label>
+                        <div class="col-md-7">
+                            <p id="devicename" class="form-control-static"></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">设备文档</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="deviceFile" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">使用经验</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="experience" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label">设备位置</label>
+                        <div class="col-sm-5">
+                            <p class="form-control-static"><a id="devicemap" class="downloadLink" href="" target="_blank">查看</a></p>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">位置详情</label>
+                        <div class="col-md-7">
+                            <textarea id="posinfo" class="form-control" rows="5" readonly></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--保存画布弹窗-->
+<div class="modal fade" id="upLoadCanvas" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                    &times;
+                </button>
+                <h4 class="modal-title">
+                    保存当前画布
+                </h4>
+            </div>
+            <div class="modal-body">
+                <form class="form-horizontal" id="upLoadCanvasForm" role="form">
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">画布标题</label>
+                        <div class="col-md-7">
+                            <input id="upLoadCanvasName" type="text" class="form-control input-md" placeholder="">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-md-3 control-label">内容</label>
+                        <div class="col-md-7">
+                            <textarea id="upLoadCanvasIntro" class="form-control" rows="5"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                </button>
+                <button id="canvasSub" type="submit" class="btn btn-primary">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modules/system.js"></script>
+<script src="js/modules/subSystem.js"></script>
+<script src="js/modules/device.js"></script>
+<script src="js/modules/messageBoard.js"></script>
+<script src="js/pagesJS/ClusterShow.js"></script>
+</html>

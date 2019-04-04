@@ -1,0 +1,25 @@
+.banner {
+    margin-top: -20px;
+}
+.banner .carousel-inner img {
+    width: 100%;
+}
+.showPanels {
+    padding: 15px;
+}
+/*设备文档链接*/
+.list-group-item a {
+    color: #337ab7;
+}
+/*更多*/
+a.more {
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    height: auto;
+    cursor: pointer;
+}
+a.more:hover {
+    color: #ffffff;
+}

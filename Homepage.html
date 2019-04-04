@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>首页</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/sweetalert.css">
+	<link rel="stylesheet" type="text/css" href="css/Homepage.css"/>
+</head>
+<body>
+	<nav class="navbar nav-pills">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="Homepage.html">
+					<div class="logo_image">
+						<img class="logo_one" src="images/logo.png"/>
+						<img class="logo_two" src="images/logo_title.png"/>
+					</div>
+				</a>
+			</div>
+			<div class="container_list">
+				<ul id="top-nav" class="nav navbar-nav sections">
+					<li class="content"><a class="current" href="Homepage.html"><p>首页</p></a></li>
+					<li class="content"><a href="ClusterShow.html"><p>集群展示</p></a></li>
+					<li class="content"><a href="EquipmentDocument.html"><p>设备文档</p></a></li>
+					<li class="content"><a href="LogRecord.html"><p>日志记录</p></a></li>
+					<li class="content"><a href="MessageBoard.html"><p>留言板</p></a></li>
+				</ul>
+				<ul class="nav navbar-nav unload">
+					<li class="content" id="quitLogin"><a href="javascript:;"><p>退出登录</p></a></li>
+					<li class="content" data-toggle="modal" data-target="#editMyPSW"><a href="javascript:;"><p>修改密码</p></a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="banner">
+		<div id="myCarousel" class="carousel slide">
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="item active">
+					<img src="images/slide1.jpg">
+					<div class="carousel-caption"><h1>标题 1</h1></div>
+				</div>
+			</div>
+			<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>
+	<div class="showPanels">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">演播室集群简介</h3>
+					</div>
+					<!--简介内容开始   假数据-->
+					<div class="panel-body">
+						<p style="text-indent: 2em;font-size: 16px;">浙江国际影视中心演播厅集群于2016年9月正式投入使用，包括2500㎡演播厅、1200㎡演播厅、600㎡演播厅、分控中心及配套机房等，位于影视制作综合大楼裙楼。演播厅集群将视频系统、音频系统、灯光系统紧密结合，通过智能控制系统实现各类资源的池化共享、动态调度、统一调配和控制，打造面向超大型节目的全耦合全覆盖演播厅集群，为《王牌对王牌》、《中国新歌声》等节目制作提供了多元化、复杂化、流程化的解决方案。系统既能兼顾未来大型综艺节目多场景、多节目同时制作的特殊需求，最大限度地满足电视直播和录播的需要，又能够兼顾大型舞台剧、歌舞剧、音乐会的演出功能以及大型会议功能。</p>
+					</div>
+					<!--简介内容结束-->
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">通知公告</h3>
+						<a id="moreNotice" href="Notification.html" class="more" style="display: none;">更多</a>
+					</div>
+					<div class="panel-body">
+						<div class="list-group" id="notificationList">
+							<a href="#" class="list-group-item"  data-messagelogid="" data-toggle="modal" data-target="#checkMessage" onclick="normalMessage.checkData(this)">
+								<div class="row">
+									<div class="col-md-3 col-sm-3">标题</div>
+									<div class="col-md-6 col-sm-6"><p class="text-nowrap autocut">内容</p></div>
+									<div class="col-md-3 col-sm-3">人员</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">留言板</h3>
+						<a href="MessageBoard.html" class="more">更多</a>
+					</div>
+					<div class="panel-body">
+						<div class="list-group" id="messageList">
+							<a href="#" class="list-group-item"  data-messagelogid="" data-toggle="modal" data-target="#checkMessage" onclick="normalMessage.checkData(this)">
+								<div class="row">
+									<div class="col-md-3 col-sm-3">标题</div>
+									<div class="col-md-6 col-sm-6"><p class="text-nowrap autocut">内容</p></div>
+									<div class="col-md-3 col-sm-3">人员</div>
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 col-sm-12 col-xs-12">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">设备文档</h3>
+						<a href="EquipmentDocument.html" class="more">更多</a>
+					</div>
+					<div class="panel-body">
+						<ul id="equipDocumentList" class="list-group">
+							<li class="list-group-item">
+								<div class="row">
+									<div class="col-md-3 col-sm-3">设备名称</div>
+									<div class="col-md-3 col-sm-3"><a href="#">用户手册</a></div>
+									<div class="col-md-3 col-sm-3"><a href="#">使用经验</a></div>
+									<div class="col-md-3 col-sm-3"><a href="#">位置</a></div>
+								</div>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer>
+        <p class="foot_copyright">浙江广播电视集团  版权所有 </p>
+        <p class="foot_copyright"> 浙江省杭州市莫干山路111号 邮政编码：310005</p>
+	</footer>
+	<!--修改密码-->
+	<div class="modal fade" id="editMyPSW" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						修改密码
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" id="editMyPSWForm" role="form">
+						<div class="form-group">
+							<label class="col-md-3 control-label">用户名</label>
+							<div class="col-md-7">
+								<p id="editPSWuser" class="form-control-static"></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">密码</label>
+							<div class="col-md-7">
+								<input id="editnewPSW" data-toggle="password" data-placement="before" data-message="点击显示/隐藏密码" class="form-control" type="password" laceholder="password">
+								<!--<input id="addManagePassword" type="text" class="form-control " placeholder="">-->
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">确认密码</label>
+							<div class="col-md-7">
+								<input id="editconfirmPSW" data-toggle="password" data-placement="before" data-message="点击显示/隐藏密码" class="form-control" type="password" laceholder="password">
+								<!--<p id="checkpassword" class="form-control-static"></p>-->
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">手机号</label>
+							<div class="col-md-7">
+								<input id="editphonePSW" type="text" class="form-control " placeholder="">
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">验证码</label>
+							<div class="col-md-4">
+								<div class="input-group">
+									<input id="codeInput" type="text" class="form-control" placeholder="输入验证码">
+									<span class="input-group-btn">
+										<button id="codeBtn" class="btn btn-primary" type="button">
+											获取
+										</button>
+									</span>
+								</div><!-- /input-group -->
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+					<button type="submit" class="btn btn-primary" onclick="editMyPSW.edit();">
+						确定
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--留言详情-->
+	<div class="modal fade" id="checkMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						留言板详情
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-md-3 control-label">标题</label>
+							<div class="col-md-7">
+								<p id="checkMessageTitle" class="form-control-static"></p>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">内容</label>
+							<div class="col-md-7">
+								<textarea id="checkMessageContent" class="form-control" rows="5" readonly></textarea>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">上传人员</label>
+							<div class="col-md-7">
+								<p id="checkMessageUser" class="form-control-static"></p>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-md-3 control-label">上传时间</label>
+							<div class="col-md-7">
+								<p id="checkMessageAddTime" class="form-control-static"></p>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label class="col-sm-3 control-label">附件</label>
+							<div class="col-sm-5">
+								<p class="form-control-static"><a id="checkMessageFile" class="downloadLink" href="" target="_blank">下载</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--通知公告详情-->
+	<div class="modal fade" id="checkNotice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						通知公告详情
+					</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal" role="form">
+						<div class="form-group">
+							<label class="col-md-3 control-label">标题</label>
+							<div class="col-md-7">
+								<p id="boardname" class="form-control-static"></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">内容</label>
+							<div class="col-md-7">
+								<textarea id="boardvalue" class="form-control" rows="5" readonly></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">相关人员</label>
+							<div class="col-md-7">
+								<p id="username" class="form-control-static"></p>
+							</div>
+						</div>
+						<div class="form-group">
+							<label class="col-md-3 control-label">附件</label>
+							<div class="col-md-7">
+								<p class="form-control-static"><a id="noticefile" class="downloadLink" href="" target="_blank">查看</a></p>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--演播厅集群简介详情-->
+	<div class="modal fade" id="checkIntroduction" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog ">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+						&times;
+					</button>
+					<h4 class="modal-title">
+						演播厅集群简介
+					</h4>
+				</div>
+				<div class="modal-body">
+					<p style="text-indent: 2em;font-size: 16px;">浙江国际影视中心演播厅集群于2016年9月正式投入使用，包括2500㎡演播厅、1200㎡演播厅、600㎡演播厅、分控中心及配套机房等，位于影视制作综合大楼裙楼。演播厅集群将视频系统、音频系统、灯光系统紧密结合，通过智能控制系统实现各类资源的池化共享、动态调度、统一调配和控制，打造面向超大型节目的全耦合全覆盖演播厅集群，为《王牌对王牌》、《中国新歌声》等节目制作提供了多元化、复杂化、流程化的解决方案。系统既能兼顾未来大型综艺节目多场景、多节目同时制作的特殊需求，最大限度地满足电视直播和录播的需要，又能够兼顾大型舞台剧、歌舞剧、音乐会的演出功能以及大型会议功能。</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery-3.2.1.min.js" ></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/sweetalert.min.js"></script>
+<script src="js/global.js"></script>
+<script src="js/modules/picture.js"></script>
+<script src="js/modules/device.js"></script>
+<script src="js/modules/messageBoard.js"></script>
+<script src="js/modules/notification.js"></script>
+<script src="js/pagesJS/Homepage.js"></script>
+</html>

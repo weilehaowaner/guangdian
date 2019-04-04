@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1920 1080" style="enable-background:new 0 0 1920 1080;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;enable-background:new    ;}
+	.st1{fill:#37A8FD;}
+	.st2{fill:#0AB644;}
+	.st3{fill:#FFFFFF;}
+	.st4{fill:#433F3C;}
+	.st5{font-family:'PingFangSC-Semibold-GBpc-EUC-H';}
+	.st6{font-size:25.5558px;}
+	.st7{font-size:30.6664px;}
+	.st8{font-size:24.1669px;}
+	.st9{font-size:28.9997px;}
+	.st10{fill:#F5A931;}
+	.st11{font-size:18.0557px;glyph-orientation-vertical:0;writing-mode:tb;}
+	.st12{font-size:18.0557px;}
+	.st13{fill:none;stroke:#FF5555;stroke-width:3;stroke-dasharray:12,6;}
+	.st14{fill:#FF5555;}
+	.st15{font-size:18.3379px;}
+	.st16{font-size:18.3379px;glyph-orientation-vertical:0;writing-mode:tb;}
+	.st17{font-size:16.0454px;glyph-orientation-vertical:0;writing-mode:tb;}
+	.st18{fill:none;stroke:#433F3C;stroke-width:3;}
+	.st19{fill:none;stroke:#37A8FD;stroke-width:3;}
+	.st20{fill:none;stroke:#FF5555;stroke-width:3;}
+	.st21{fill:none;stroke:#0AB644;stroke-width:3;}
+	.st22{fill:none;stroke:#A8A8A8;stroke-width:3;}
+	.st23{fill:#A8A8A8;}
+	.st24{fill:none;stroke:#F5A931;stroke-width:3;}
+	.st25{fill:none;stroke:#0AB644;stroke-width:8;}
+	.st26{font-size:28.6113px;}
+</style>
+<image style="display:none;overflow:visible;enable-background:new    ;" width="1920" height="1080" xlink:href="9B825F9B31C310E9.png" >
+</image>
+<path class="st0" d="M0,0"/>
+<path class="st1" d="M254,168.1h170.3c11.6,0,21,9.4,21,21V908c0,11.6-9.4,21-21,21H254c-11.6,0-21-9.4-21-21V189.1
+	C233,177.5,242.4,168.1,254,168.1z"/>
+<path class="st2" d="M1258.4,189.5h161.2c11.6,0,21,9.4,21,21v683.4c0,11.6-9.4,21-21,21h-161.2c-11.6,0-21-9.4-21-21V210.5
+	C1237.4,198.9,1246.8,189.5,1258.4,189.5z"/>
+<g>
+	<g>
+		<path class="st3" d="M290.7,220.9h97.8c15.7,0,28.4,12.7,28.4,28.4v1.8c0,15.7-12.7,28.4-28.4,28.4h-97.8
+			c-15.7,0-28.4-12.7-28.4-28.4v-1.8C262.3,233.6,275,220.9,290.7,220.9z"/>
+		<text transform="matrix(0.9891 0 0 1 310.7534 260)" class="st4 st5 st6">CAM</text>
+	</g>
+	<g>
+		<path class="st3" d="M290.7,329.7h97.8c15.7,0,28.4,12.7,28.4,28.4v1.8c0,15.7-12.7,28.4-28.4,28.4h-97.8
+			c-15.7,0-28.4-12.7-28.4-28.4v-1.8C262.3,342.4,275,329.7,290.7,329.7z"/>
+		<text transform="matrix(0.9891 0 0 1 289.4438 368.0469)" class="st4 st5 st6">特种设备</text>
+	</g>
+	<g>
+		<path class="st3" d="M290.7,437.7h97.8c15.7,0,28.4,12.7,28.4,28.4v1.8c0,15.7-12.7,28.4-28.4,28.4h-97.8
+			c-15.7,0-28.4-12.7-28.4-28.4v-1.8C262.3,450.4,275,437.7,290.7,437.7z"/>
+		<text transform="matrix(0.9891 0 0 1 302.083 476.0469)" class="st4 st5 st6">字幕机</text>
+	</g>
+	<text transform="matrix(0.9891 0 0 1 294.5005 835.0566)" class="st4 st5 st7">信号源</text>
+	<text transform="matrix(0.9891 0 0 1 309.667 871.8564)" class="st4 st5 st7">输入</text>
+	<g>
+		<path class="st3" d="M290.7,546.5h97.8c15.7,0,28.4,12.7,28.4,28.4v1.8c0,15.7-12.7,28.4-28.4,28.4h-97.8
+			c-15.7,0-28.4-12.7-28.4-28.4v-1.8C262.3,559.2,275,546.5,290.7,546.5z"/>
+		<text transform="matrix(0.9891 0 0 1 315.3291 585)" class="st4 st5 st6">EVS</text>
+	</g>
+	<g>
+		<path class="st3" d="M290.7,655.3h97.8c15.7,0,28.4,12.7,28.4,28.4v1.8c0,15.7-12.7,28.4-28.4,28.4h-97.8
+			c-15.7,0-28.4-12.7-28.4-28.4v-1.8C262.3,668,275,655.3,290.7,655.3z"/>
+		<text transform="matrix(0.9891 0 0 1 292.478 694)" class="st4 st5 st6">HD VTR</text>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st3" d="M1292.5,236.7h93.8c15,0,27.1,12.1,27.1,27.1v1.7c0,15-12.1,27.1-27.1,27.1h-93.8c-15,0-27.1-12.1-27.1-27.1
+			v-1.7C1265.4,248.8,1277.5,236.7,1292.5,236.7z"/>
+		<text transform="matrix(1.0115 0 0 1 1314.5557 274.0444)" class="st4 st5 st8">主路</text>
+	</g>
+	<g>
+		<path class="st3" d="M1292.5,381.8h93.8c15,0,27.1,12.1,27.1,27.1v1.7c0,15-12.1,27.1-27.1,27.1h-93.8c-15,0-27.1-12.1-27.1-27.1
+			v-1.7C1265.4,393.9,1277.6,381.8,1292.5,381.8z"/>
+		<text transform="matrix(1.0115 0 0 1 1314.5557 419.0444)" class="st4 st5 st8">备路</text>
+	</g>
+	<g>
+		<path class="st3" d="M1292.5,527.8h93.8c15,0,27.1,12.1,27.1,27.1v1.7c0,15-12.1,27.1-27.1,27.1h-93.8c-15,0-27.1-12.1-27.1-27.1
+			v-1.7C1265.4,539.9,1277.6,527.8,1292.5,527.8z"/>
+		<text transform="matrix(1.0115 0 0 1 1314.5557 565.0449)" class="st4 st5 st8">主路</text>
+	</g>
+	<text transform="matrix(1.0115 0 0 1 1295.001 822.0537)" class="st4 st5 st9">光传输</text>
+	<text transform="matrix(1.0115 0 0 1 1309.667 856.8535)" class="st4 st5 st9">系统</text>
+	<g>
+		<path class="st3" d="M1292.5,672.8h93.8c15,0,27.1,12.1,27.1,27.1v1.7c0,15-12.1,27.1-27.1,27.1h-93.8c-15,0-27.1-12.1-27.1-27.1
+			V700C1265.4,685,1277.6,672.8,1292.5,672.8z"/>
+		<text transform="matrix(1.0115 0 0 1 1314.5557 710.0449)" class="st4 st5 st8">备路</text>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st10" d="M663.1,154h1.4c12.2,0,22,9.9,22,22v76.2c0,12.2-9.9,22-22,22h-1.4c-12.2,0-22-9.9-22-22V176
+			C641,163.9,650.9,154,663.1,154z"/>
+		<text transform="matrix(1 0 0 1 664 176.8887)" class="st3 st5 st11">切换台</text>
+		<text transform="matrix(1 0 0 1 657.7021 260.0887)" class="st3 st5 st12">A</text>
+	</g>
+	<g>
+		<path class="st10" d="M663.1,302h1.4c12.2,0,22,9.9,22,22v76.3c0,12.2-9.9,22-22,22h-1.4c-12.2,0-22-9.9-22-22V324
+			C641,311.8,650.9,302,663.1,302z"/>
+		<text transform="matrix(1 0 0 1 664 324.8887)" class="st3 st5 st11">切换台</text>
+		<text transform="matrix(1 0 0 1 659.7021 410.0887)" class="st3 st5 st12">B</text>
+	</g>
+	<g>
+		<path class="st10" d="M663.1,450h1.4c12.2,0,22,9.9,22,22v76.2c0,12.2-9.9,22-22,22h-1.4c-12.2,0-22-9.9-22-22V472
+			C641,459.8,650.9,450,663.1,450z"/>
+		<text transform="matrix(1 0 0 1 664 481.9165)" class="st3 st5 st11">矩阵</text>
+		<text transform="matrix(1 0 0 1 656.7021 545.0165)" class="st3 st5 st12">A</text>
+	</g>
+	<g>
+		<path class="st10" d="M663.1,597.9h1.4c12.2,0,22,9.9,22,22v76.3c0,12.2-9.9,22-22,22h-1.4c-12.2,0-22-9.9-22-22v-76.3
+			C641,607.8,650.9,597.9,663.1,597.9z"/>
+		<text transform="matrix(1 0 0 1 664 629.916)" class="st3 st5 st11">矩阵</text>
+		<text transform="matrix(1 0 0 1 656.7021 690.016)" class="st3 st5 st12">B</text>
+	</g>
+	<g>
+		<path class="st10" d="M663.1,745.9h1.4c12.2,0,22,9.9,22,22v76.3c0,12.2-9.9,22-22,22h-1.4c-12.2,0-22-9.9-22-22v-76.3
+			C641,755.8,650.9,745.9,663.1,745.9z"/>
+		<text transform="matrix(1 0 0 1 664 777.916)" class="st3 st5 st11">矩阵</text>
+		<text transform="matrix(1 0 0 1 654.7021 843.016)" class="st3 st5 st12">M</text>
+	</g>
+</g>
+<g>
+	<path class="st13" d="M819.5,182.9h360c2.8,0,5,2.2,5,5V472c0,2.8-2.2,5-5,5h-360c-2.8,0-5-2.2-5-5V187.9
+		C814.5,185.2,816.7,182.9,819.5,182.9z"/>
+	<g>
+		<g>
+			<g>
+				<path class="st14" d="M864,208.5h25.3c5,0,9,4,9,9V287c0,5-4,9-9,9H864c-5,0-9-4-9-9v-69.5C855,212.6,859,208.5,864,208.5z"/>
+				<text transform="matrix(1 0 0 1 872.7023 225.4932)" class="st3 st5 st15">3</text>
+				<text transform="matrix(1 0 0 1 877.0001 236.4932)" class="st3 st5 st16">选</text>
+				<text transform="matrix(1 0 0 1 872.7023 280.7932)" class="st3 st5 st15">1</text>
+			</g>
+			<g>
+				<path class="st14" d="M864,362.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9H864c-5,0-9-4-9-9v-69.5C855,366.4,859,362.3,864,362.3z"/>
+				<text transform="matrix(1 0 0 1 872.7023 379.4932)" class="st3 st5 st15">3</text>
+				<text transform="matrix(1 0 0 1 877.0001 390.4932)" class="st3 st5 st16">选</text>
+				<text transform="matrix(1 0 0 1 872.7023 438.7932)" class="st3 st5 st15">1</text>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st14" d="M976.5,208.5h25.3c5,0,9,4,9,9V287c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C967.5,212.6,971.6,208.5,976.5,208.5z"/>
+				<text transform="matrix(1 0 0 1 989 225.4932)" class="st3 st5 st16">加嵌器</text>
+			</g>
+			<g>
+				<path class="st14" d="M976.5,362.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C967.5,366.4,971.6,362.3,976.5,362.3z"/>
+				<text transform="matrix(1 0 0 1 989 379.4932)" class="st3 st5 st16">加嵌器</text>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st14" d="M1089.1,208.5h25.3c5,0,9,4,9,9V287c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C1080.1,212.6,1084.2,208.5,1089.1,208.5z"/>
+				<text transform="matrix(1 0 0 1 1102 220.9092)" class="st3 st5 st17">视频分配</text>
+			</g>
+			<g>
+				<path class="st14" d="M1089.1,362.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C1080.1,366.4,1084.2,362.3,1089.1,362.3z"/>
+				<text transform="matrix(1 0 0 1 1102 374.9092)" class="st3 st5 st17">视频分配</text>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path class="st18" d="M897.9,254h60.7"/>
+		<path class="st4" d="M967.3,254.2l-14.9-7v14L967.3,254.2"/>
+	</g>
+	<g>
+		<path class="st18" d="M1010.2,254h63.7"/>
+		<path class="st4" d="M1080.5,254.2l-14.9-7v14L1080.5,254.2"/>
+	</g>
+	<g>
+		<path class="st18" d="M897.9,405.2h61.7"/>
+		<path class="st4" d="M967.3,405.4l-14.9-7v14L967.3,405.4"/>
+	</g>
+	<g>
+		<path class="st18" d="M1010.2,405.2h63.7"/>
+		<path class="st4" d="M1080.5,405.4l-14.9-7v14L1080.5,405.4"/>
+	</g>
+	<g>
+		<path class="st18" d="M1123.4,256.5h103.2"/>
+		<path class="st4" d="M1237.4,256.7l-14.9-7v14L1237.4,256.7"/>
+	</g>
+	<g>
+		<path class="st18" d="M1123.4,398.6h104.1"/>
+		<path class="st4" d="M1238.2,398.8l-14.9-7v14L1238.2,398.8"/>
+	</g>
+	<g>
+		<path class="st18" d="M444.5,240.8h181.7"/>
+		<path class="st4" d="M641,241l-14.9-7v14L641,241"/>
+	</g>
+	<g>
+		<path class="st18" d="M444.5,373h181.7"/>
+		<path class="st4" d="M641,373.2l-14.9-7v14L641,373.2"/>
+	</g>
+	<g>
+		<path class="st18" d="M444.5,665.2h181.7"/>
+		<path class="st4" d="M641,665.5l-14.9-7v14L641,665.5"/>
+	</g>
+	<g>
+		<path class="st18" d="M444.5,471.3h181.7"/>
+		<path class="st4" d="M641,470.5l-14.9-7v14L641,470.5"/>
+	</g>
+	<g>
+		<g>
+			<path class="st19" d="M527,199.4h99.1"/>
+			<path class="st1" d="M641,199.7l-14.9-7v14L641,199.7"/>
+		</g>
+		<g>
+			<path class="st19" d="M526.2,497.7h103.2"/>
+			<path class="st1" d="M641.9,496.9l-14.9-7v14L641.9,496.9"/>
+			<path class="st19" d="M527.9,198.4v499.2"/>
+		</g>
+		<g>
+			<path class="st19" d="M526.4,696h103.1"/>
+			<path class="st1" d="M641.9,696.2l-14.9-7v14L641.9,696.2"/>
+		</g>
+	</g>
+	<g>
+		<path class="st20" d="M741,213.3v508.9"/>
+		<path class="st20" d="M686.5,214.3h53.7"/>
+		<g>
+			<path class="st20" d="M740.2,249h99.1"/>
+			<path class="st14" d="M854.1,250.3l-14.9-7v14L854.1,250.3"/>
+		</g>
+		<g>
+			<path class="st20" d="M739.3,563.8h103.2"/>
+			<path class="st14" d="M855,564l-14.9-7v14L855,564"/>
+		</g>
+		<g>
+			<path class="st20" d="M739.3,406.8h103.2"/>
+			<path class="st14" d="M855,407.1l-14.9-7v14L855,407.1"/>
+		</g>
+		<g>
+			<path class="st20" d="M739.5,720.8h103.1"/>
+			<path class="st14" d="M855,721l-14.9-7v14L855,721"/>
+		</g>
+	</g>
+	<g>
+		<path class="st21" d="M765.8,273.8V746"/>
+		<path class="st21" d="M686.5,363H765"/>
+		<g>
+			<path class="st21" d="M764.3,273.8h75"/>
+			<path class="st2" d="M854.1,274l-14.9-7v14L854.1,274"/>
+		</g>
+		<g>
+			<path class="st21" d="M765.8,588.6h76.8"/>
+			<path class="st2" d="M855,588.8l-14.9-7v14L855,588.8"/>
+		</g>
+		<g>
+			<path class="st21" d="M764.9,431.6h77.6"/>
+			<path class="st2" d="M855,431.9l-14.9-7v14L855,431.9"/>
+		</g>
+		<g>
+			<path class="st21" d="M764.1,745.6h78.5"/>
+			<path class="st2" d="M855,745.8l-14.9-7v14L855,745.8"/>
+		</g>
+	</g>
+	<g>
+		<path class="st18" d="M783.9,223.2v248.7"/>
+		<path class="st18" d="M686.5,470.4H784"/>
+		<path class="st18" d="M783.9,539.8v157"/>
+		<path class="st18" d="M686.5,652.2H784"/>
+		<g>
+			<path class="st18" d="M783.3,224.2h56"/>
+			<path class="st4" d="M854.1,225.5l-14.9-7v14L854.1,225.5"/>
+		</g>
+		<g>
+			<path class="st18" d="M782.5,696h60.1"/>
+			<path class="st4" d="M855,696.2l-14.9-7v14L855,696.2"/>
+		</g>
+		<g>
+			<path class="st18" d="M782.5,382h60.1"/>
+			<path class="st4" d="M855,382.3l-14.9-7v14L855,382.3"/>
+		</g>
+		<g>
+			<path class="st18" d="M782.5,539.8h60.1"/>
+			<path class="st4" d="M855,540.1l-14.9-7v14L855,540.1"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st22" d="M502.3,529.9h123.9"/>
+			<path class="st23" d="M641,529.2l-14.9-7v14L641,529.2"/>
+		</g>
+		<g>
+			<path class="st22" d="M502.4,679.5h123.7"/>
+			<path class="st23" d="M641,680.7l-14.9-7v14L641,680.7"/>
+			<path class="st22" d="M504.1,531.6v289.8"/>
+		</g>
+		<path class="st22" d="M503,820h138"/>
+	</g>
+	<g>
+		<path class="st22" d="M773.2,531.6h-86.9"/>
+		<g>
+			<path class="st22" d="M773.4,682h-86.9"/>
+			<path class="st22" d="M774.8,530.1v293.8"/>
+		</g>
+		<g>
+			<path class="st22" d="M774.8,822.4h-73.5"/>
+			<path class="st23" d="M686.5,822.2l14.9-7v14L686.5,822.2"/>
+		</g>
+	</g>
+	<g>
+		<g>
+			<path class="st24" d="M567.7,357.3H627"/>
+			<path class="st10" d="M641,357.5l-14.9-7v14L641,357.5"/>
+		</g>
+		<g>
+			<path class="st24" d="M568.3,513.4h57.8"/>
+			<path class="st10" d="M641,512.6l-14.9-7v14L641,512.6"/>
+			<path class="st24" d="M569.2,358.9v289.8"/>
+		</g>
+		<g>
+			<path class="st24" d="M567.7,647.3H627"/>
+			<path class="st10" d="M641.9,647.5l-14.9-7v14L641.9,647.5"/>
+		</g>
+	</g>
+	<g>
+		<path class="st18" d="M444.5,844.7h185"/>
+		<path class="st4" d="M641.9,845l-14.9-7v14L641.9,845"/>
+	</g>
+	<g>
+		<path class="st18" d="M686.5,844.7h537.7"/>
+		<path class="st4" d="M1237.6,845l-14.9-7v14L1237.6,845"/>
+	</g>
+</g>
+<g>
+	<path class="st13" d="M819.5,496.9h360c2.8,0,5,2.2,5,5V786c0,2.8-2.2,5-5,5h-360c-2.8,0-5-2.2-5-5V501.9
+		C814.5,499.1,816.7,496.9,819.5,496.9z"/>
+	<g>
+		<g>
+			<g>
+				<path class="st14" d="M864,522.5h25.3c5,0,9,4,9,9V601c0,5-4,9-9,9H864c-5,0-9-4-9-9v-69.5C855,526.5,859,522.5,864,522.5z"/>
+				<text transform="matrix(1 0 0 1 872.7023 539.4932)" class="st3 st5 st15">3</text>
+				<text transform="matrix(1 0 0 1 877.0001 550.4932)" class="st3 st5 st16">选</text>
+				<text transform="matrix(1 0 0 1 872.7023 590.7932)" class="st3 st5 st15">1</text>
+			</g>
+			<g>
+				<path class="st14" d="M864,676.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9H864c-5,0-9-4-9-9v-69.5C855,680.3,859,676.3,864,676.3z"/>
+				<text transform="matrix(1 0 0 1 872.7023 693.4932)" class="st3 st5 st15">3</text>
+				<text transform="matrix(1 0 0 1 877.0001 704.4932)" class="st3 st5 st16">选</text>
+				<text transform="matrix(1 0 0 1 872.7023 750.7932)" class="st3 st5 st15">1</text>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st14" d="M976.5,522.5h25.3c5,0,9,4,9,9V601c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C967.5,526.5,971.6,522.5,976.5,522.5z"/>
+				<text transform="matrix(1 0 0 1 989 539.4932)" class="st3 st5 st16">加嵌器</text>
+			</g>
+			<g>
+				<path class="st14" d="M976.5,676.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C967.5,680.3,971.6,676.3,976.5,676.3z"/>
+				<text transform="matrix(1 0 0 1 989 693.4932)" class="st3 st5 st16">加嵌器</text>
+			</g>
+		</g>
+		<g>
+			<g>
+				<path class="st14" d="M1089.1,522.5h25.3c5,0,9,4,9,9V601c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C1080.1,526.5,1084.2,522.5,1089.1,522.5z"/>
+				<text transform="matrix(1 0 0 1 1102 534.9092)" class="st3 st5 st17">视频分配</text>
+			</g>
+			<g>
+				<path class="st14" d="M1089.1,676.3h25.3c5,0,9,4,9,9v69.5c0,5-4,9-9,9h-25.3c-5,0-9-4-9-9v-69.5
+					C1080.1,680.3,1084.2,676.3,1089.1,676.3z"/>
+				<text transform="matrix(1 0 0 1 1102 688.9092)" class="st3 st5 st17">视频分配</text>
+			</g>
+		</g>
+	</g>
+	<g>
+		<path class="st18" d="M897.9,567.9h62.7"/>
+		<path class="st4" d="M967.3,568.2l-14.9-7v14L967.3,568.2"/>
+	</g>
+	<g>
+		<path class="st18" d="M1010.2,567.9h63.7"/>
+		<path class="st4" d="M1080.5,568.2l-14.9-7v14L1080.5,568.2"/>
+	</g>
+	<g>
+		<path class="st18" d="M897.9,719.1h63.7"/>
+		<path class="st4" d="M967.3,719.4l-14.9-7v14L967.3,719.4"/>
+	</g>
+	<g>
+		<path class="st18" d="M1010.2,719.1h63.7"/>
+		<path class="st4" d="M1080.5,719.4l-14.9-7v14L1080.5,719.4"/>
+	</g>
+	<g>
+		<path class="st18" d="M1123.4,562.2h103.2"/>
+		<path class="st4" d="M1237.4,562.4l-14.9-7v14L1237.4,562.4"/>
+	</g>
+	<g>
+		<path class="st18" d="M1123.4,704.3h104.1"/>
+		<path class="st4" d="M1238.2,704.5l-14.9-7v14L1238.2,704.5"/>
+	</g>
+</g>
+<path class="st2" d="M1583.5,445H1694c9.4,0,17,7.6,17,17v110.5c0,9.4-7.6,17-17,17h-110.5c-9.4,0-17-7.6-17-17V462
+	C1566.5,452.6,1574.1,445,1583.5,445z"/>
+<path class="st25" d="M1439.6,517h103.2"/>
+<path class="st2" d="M1568.6,516.7l-27.9-16v32L1568.6,516.7"/>
+<text transform="matrix(1 0 0 1 1610.3887 509.0532)" class="st3 st5 st26">总控</text>
+<text transform="matrix(1 0 0 1 1610.3887 543.3867)" class="st3 st5 st26">机房</text>
+</svg>

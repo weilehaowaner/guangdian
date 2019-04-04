@@ -1,0 +1,185 @@
+*{
+    margin: 0 ;
+    padding: 0;
+}
+.window{
+
+    width: 100%;
+}
+html{
+    /*width: 100%;*/
+    /*height: 100%;*/
+    width: 100%;
+}
+body{
+    width: 100%;
+    font-size: 100%;
+}
+.bg{
+    position: absolute;
+    width:100%;
+    height: 100%;
+    background-image: url(../images/bg.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: -1;
+}
+.bgImg{
+    width:100%;
+    height: 100%;
+}
+.row{
+    width: 100%;
+    height: 100%;
+}
+.col-md-4{
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    left: 62%;
+}
+.title{
+    margin: 2rem -0.3rem 1rem 0;
+    font-size: 0.5rem;
+    text-align: right;
+    color: #036d9e;
+    position: relative;
+    top: 0%;
+    right: 10%;
+}
+@media screen and (max-width: 1024px){
+    .title{
+        margin: 3.6rem -0.3rem 1rem 0;
+    }
+}
+.input_align{
+    float: right;
+    width: 3.45rem;
+    height: 0.55rem;
+    border-radius: 0.05rem;
+    border: solid 2px #dcdcdc;
+}
+
+.landing_input_group{
+    width: 100%;
+    margin: 0.35rem 0 0 0;
+}
+
+.landing_input_group input{
+    font-size: 16px;
+    padding-left: 2%;
+}
+
+.input_addSpan{
+    display: block;
+    float: right;
+    font-size: 18px;
+    color: #797979;
+    line-height: 0.55rem;
+}
+.withGet{
+    width: 2.5rem;
+}
+.get{
+    float: right;
+    display: block;
+    width: 0.95rem;
+    height: 0.55rem;
+}
+.checkbox_container{
+    width: 80%;
+
+}
+.alignWithInput1{
+    width: 100%;
+}
+.alignWithInput2{
+    float: right;
+    margin: 0.2rem 0 0 0;
+    width: 3.45rem;
+}
+.landing_checkbox,.landing_links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.landing_checkbox input{
+    font-family: "微软雅黑";
+    font-size: 15px;
+}
+.landing_links a{
+    padding: 0.12rem 0 0 0;
+    font-size: 0.18rem;
+    color: #868686;
+}
+.landing_links a:hover{
+    color: #797979;
+}
+.getBack,.getVerification{
+    border:0;
+    border-radius:0.05rem;
+    background: -webkit-linear-gradient(#86d95d,#2caf05); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#86d95d,#2caf05); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#86d95d,#2caf05); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#86d95d,#2caf05); /* 标准的语法 */
+    width: 100%;
+    font-size: 0.28rem;
+    color: #ffffff;
+    height: 0.55rem;
+}
+.getBack{
+    margin: 0.1rem 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.getBack:hover,.getVerification:hover{
+    color:#d9eed3 ;
+    background: -webkit-linear-gradient(#98de75,#4ebc2d); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#98de75,#4ebc2d); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#98de75,#4ebc2d); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#98de75,#4ebc2d); /* 标准的语法 */
+}
+.getVerification{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+/*******************单选radio样式**********************/
+input[type="radio"] + label::before {
+    content: "\a0"; /*不换行空格*/
+    display: inline-block;
+    vertical-align: middle;
+    width: 0.25rem;
+    height: 0.25rem;
+    margin-right: 0.05rem;
+    border-radius: 50%;
+    border: 2px solid #797979;
+    line-height: 1;
+    padding: .05rem;
+
+}
+input[type="radio"]:checked + label::before {
+    background-color: #0380ba;
+    background-clip: content-box;
+    padding: 0.05rem;
+}
+
+input[type="radio"]:checked + label::before {
+    border: 2px solid #0380ba;
+}
+
+
+input[type="radio"] {
+    position: absolute;
+    clip: rect(0, 0, 0, 0);
+}
+label{
+    font-size: 15px;
+}
+.identity{
+    font-size: 0.18rem;
+    color: #797979;
+    line-height: 0.4rem;
+}

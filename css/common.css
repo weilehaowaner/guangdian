@@ -1,0 +1,301 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+	height: 100%;
+}
+html,body{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background: rgb(230,230,230);
+}
+body {
+	/*保证footer是相对于container位置绝对定位*/
+	position:relative;
+	width:100%;
+	min-height:100%;
+	/*设置padding-bottom值大于等于footer的height值，以保证main的内容能够全部显示出来而不被footer遮盖；*/
+	padding-bottom: 60px;
+	box-sizing: border-box;
+
+}
+a{
+	color: rgb(255,255,255);
+	height: 100%;
+	margin: 0;
+}
+nav{
+	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
+	margin-bottom: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+li{
+	height: 100%;
+	list-style: none;
+}
+.user_img {
+	position: absolute;
+	width: 20px;
+	top: 40%;
+	left: 6.7%;
+}
+
+.user_img:hover{
+	cursor: pointer;
+}
+span{
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+::-webkit-scrollbar{
+	width: 0.5%;
+	height: 0.1%;
+}
+
+::-webkit-scrollbar-thumb{
+	width: 5px;
+	background: rgb(56,84,110);
+}
+.container-fluid{
+	background: rgba(53,64,83,1);
+	height: 67px;
+	width: 100%;
+	min-height:100%;
+	margin-bottom: 0;
+}
+.navbar-header,.navbar-brand,.container_list,.navbar-nav{
+	height: 100%;
+	margin-bottom: 0;
+}
+.navbar-header{
+	width: 16.3%;
+	position: absolute;
+	left: 0;
+}
+.navbar-brand{
+	background: rgba(59,98,132,1);
+	margin: 0;
+	width: 100%;
+	padding: 15px 0;
+	margin: 0!important;
+}
+/*页面logo*/
+.logo_image {
+	background: rgba(59,98,132,0.5);
+	width: 137px;
+	height: 100%;
+	margin: 0 0.2rem;
+}
+
+.logo_one{
+	margin-right: 20px;
+	width: 23%;
+	margin-top: 3%;
+	margin-left: 13%;
+}
+.logo_two{
+	width: 45%;
+	margin-top: 4%;
+}
+/*页面头部导航栏*/
+.container_list{
+	width: 83.8%;
+	height: 100%;
+	position: absolute;
+	left: 16.3%;
+}
+/*头部导航栏左侧部分*/
+.sections{
+	width: 77%;
+	height: 100%;
+}
+/*每一个导航栏*/
+.content{
+	width: 15%;
+	text-align: center;
+	font-size: 16px;
+}
+/*修改导航栏内字体位置*/
+.content p{
+	padding-top: 10px;
+}
+/*当前页面导航栏里边字的颜色*/
+.current{
+	/*color: rgb(1,125,199);*/
+
+	background: rgb(57,93,123);
+	color: rgb(255,255,255);
+}
+/*右边退出登录和个人标签的位置*/
+.unload{
+	position: absolute;
+	width: 23%;
+	right: 0;
+}
+.unload li{
+	position: absolute;
+	right: 0;
+	top: 7%;
+}
+.unload .content{
+	position: relative;
+	float: right;
+	width: 50%;
+	top: 0;
+}
+.unload .content a{
+	height: 100%;
+	display: block;
+}
+.unload .content a:focus {
+	background-color: transparent;
+	color: #ffffff;
+}
+/*主内容*/
+.main_content {
+	margin: 0 auto;
+	width: 84.3%;
+	overflow: hidden;
+}
+/*下半部分主工作区*/
+.manager_main_page{
+	width: 100%;
+	/*height: 89%;*/
+	height: 100%;
+	background: rgb(230,230,230);
+	position: absolute;
+	/*top: 67px;*/
+	top: 0;
+	padding-top: 67px;
+	padding-bottom: 60px;
+}
+/*带有左半部分目录样式*/
+.manager_main_page .navbar{
+	width: 16.3%;/*217px*/
+	height: 100%;
+	margin: 0;
+	text-align: center;
+	font-size: 16px;
+	border-radius: 0;
+	border-top: 1px solid rgb(53,64,83);
+	border-bottom: 1px solid rgb(53,64,83);
+}
+.navbar-vertal{
+	width: 100%;
+	height: 100%;
+	background: rgb(53,64,83);
+}
+.navbar-vertal ul li a{
+	padding: 0 0 0 -8%;
+	/*width: 240px;*/
+	width: 100%;
+}
+.navbar{
+	border: none;
+}
+.navbar-vertal p{
+	padding-top: 12px;
+}
+.navbar-vertal li{
+	height: 62px;
+}
+.navbar-vertal li:hover{
+	cursor: pointer;
+}
+.navbar-vertal li.action {
+	background: rgb(57,93,123);
+}
+
+/*左半部分当前目录样式*/
+.current_content_active{
+	background: rgb(57,93,123);
+}
+
+.navbar-vertal p{
+	/*position: absolute;*/
+	text-align: center;
+	left: 35%;
+	font-size: 16px;
+}
+.nav li a:hover{
+	background: rgb(57,93,123);
+	color: rgb(255,255,255);
+}
+.nav li:hover
+{
+	background: rgb(57,93,123);
+}
+
+/*管理员主工作区域（右侧）(二期)*/
+.manager_main_content {
+	position:absolute;
+	top: 0;
+	left:16.3%;
+	height: 100%;
+	width: 83.7%;
+	padding-top: 67px;
+	padding-bottom: 60px;
+	overflow: scroll;
+	/*background-color: green;*/
+}
+
+/*footer*/
+footer{
+	z-index: 4;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 60px;
+	width: 100%;
+	background: rgb(29, 29, 29);
+	color: rgb(255,255,255);
+}
+footer .foot_copyright {
+	padding: 0 0 0 0;
+	margin: 3px 0 0 0;
+	position: relative;
+	/*font-size: 0.15rem;*/
+	text-align: center;
+}
+
+.paddingBox {
+	padding-bottom: 60px;
+}
+/*详情模态框下载链接*/
+.downloadLink {
+	color: #337ab7;
+	cursor: pointer;
+}
+/*文字省略点*/
+.autocut {
+	max-width: 100%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	-icab-text-overflow: ellipsis;
+	-khtml-text-overflow: ellipsis;
+	-moz-text-overflow: ellipsis;
+	-webkit-text-overflow: ellipsis;
+}
+/*通用链接*/
+.blueLink {
+	color: #337ab7;
+	cursor: pointer;
+}
+/*table样式*/
+.tablemanage {
+	width:90%;
+	margin: 0 auto;
+}
+.tablemanage table {
+	background-color: white;
+}
+
+
